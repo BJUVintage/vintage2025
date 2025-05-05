@@ -32,7 +32,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background: linear-gradient(90deg, #0a1155 0%, #162283 100%);
+    background: #001142; /* Navy blue from cover */
     color: #fff;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
     position: relative;
@@ -45,7 +45,7 @@
   }
   
   .vintage-text {
-    color: #ffc046;
+    color: #8ca5d9; /* Light blue from cover */
     font-size: 1.8rem;
     font-weight: bold;
     text-decoration: none;
@@ -98,7 +98,7 @@
   }
 
   nav a {
-    color: #ffcc00; /* Gold from yearbook cover */
+    color: #e6b93d; /* Gold from cover */
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -110,7 +110,7 @@
 
   nav a:hover {
     color: #ffffff;
-    background-color: rgba(122, 183, 255, 0.1); /* Light blue with transparency */
+    background-color: rgba(140, 165, 217, 0.15); /* Light blue with transparency */
   }
 
   .active a {
@@ -125,7 +125,7 @@
     left: 0;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, #7ab7ff, #ffcc00);
+    background: linear-gradient(90deg, #8ca5d9, #e6b93d); /* Light blue to gold */
     border-radius: 2px;
   }
 

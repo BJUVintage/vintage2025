@@ -41,9 +41,10 @@
 </svelte:head>
 
 <section class="hero">
+  <div class="university-name">BOB JONES UNIVERSITY</div>
   <div class="hero-content">
     <div class="vintage-title sparkle">VINTAGE</div>
-    <h2>2025</h2>
+    <div class="year-text">2025</div>
   </div>
 </section>
 
@@ -97,37 +98,39 @@
     z-index: 1;
     text-align: center;
     overflow: hidden;
-    background: rgba(0, 0, 0, 0.15);
+    background: #001142; /* Navy blue from cover */
     border-radius: 12px;
-    box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    min-height: 70vh;
   }
-
   
-  .hero-content {
+  .university-name {
+    color: #8ca5d9; /* Light blue */
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
     position: relative;
     z-index: 2;
   }
   
-
-  h1 {
-    color: white;
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .vintage-title {
-    font-size: 6rem;
+    font-size: 8rem;
     font-weight: bold;
     letter-spacing: 0.5rem;
     margin-bottom: 0.5rem;
     position: relative;
     display: inline-block;
-    background: linear-gradient(to bottom, #ffd56a, #eaa92d, #ffc046);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    color: #8ca5d9; /* Light blue from cover */
+    font-family: 'Times New Roman', serif;
   }
   
   /* Create sparkle effect that only applies to letters */
@@ -139,10 +142,10 @@
     width: 100%;
     height: 100%;
     background-image: 
-      radial-gradient(circle at 30% 20%, rgba(255, 234, 125, 0.9) 1px, transparent 3px),
-      radial-gradient(circle at 70% 30%, rgba(255, 234, 125, 0.9) 1px, transparent 3px),
-      radial-gradient(circle at 40% 80%, rgba(255, 234, 125, 0.9) 1px, transparent 3px),
-      radial-gradient(circle at 80% 60%, rgba(255, 234, 125, 0.9) 1px, transparent 3px);
+      radial-gradient(circle at 30% 20%, rgba(230, 185, 61, 0.9) 1px, transparent 3px),
+      radial-gradient(circle at 70% 30%, rgba(230, 185, 61, 0.9) 1px, transparent 3px),
+      radial-gradient(circle at 40% 80%, rgba(230, 185, 61, 0.9) 1px, transparent 3px),
+      radial-gradient(circle at 80% 60%, rgba(230, 185, 61, 0.9) 1px, transparent 3px);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -162,9 +165,9 @@
     height: 100%;
     background: linear-gradient(
       90deg,
-      rgba(255, 218, 77, 0) 0%,
-      rgba(255, 234, 125, 0.8) 50%,
-      rgba(255, 218, 77, 0) 100%
+      rgba(230, 185, 61, 0) 0%,
+      rgba(230, 185, 61, 0.8) 50%,
+      rgba(230, 185, 61, 0) 100%
     );
     background-size: 200% 100%;
     -webkit-background-clip: text;
@@ -193,12 +196,21 @@
       background-position: 200% 0;
     }
   }
+  
+  .year-text {
+    color: #8ca5d9; /* Light blue */
+    font-size: 2.5rem;
+    margin-top: 0.5rem;
+    letter-spacing: 0.4rem;
+  }
 
   h2 {
-    color: #7ab7ff;
+    color: #8ca5d9; /* Light blue from cover */
     font-size: 2rem;
     margin-bottom: 2rem;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid #e6b93d; /* Gold */
+    display: inline-block;
+    padding-bottom: 0.5rem;
   }
 
   .featured-section {
@@ -221,8 +233,8 @@
   .view-all a {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    background: linear-gradient(135deg, #0a1155, #162283);
-    color: #ffc046; /* Rich gold */
+    background: #001142; /* Navy blue from cover */
+    color: #e6b93d; /* Gold from cover */
     text-decoration: none;
     border-radius: 4px;
     font-weight: 500;
@@ -230,10 +242,11 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-transform: uppercase;
     letter-spacing: 1px;
+    border: 1px solid #e6b93d;
   }
 
   .view-all a:hover {
-    background: linear-gradient(135deg, #162283, #0a1155);
+    background: #00184f; /* Slightly lighter navy */
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   }
@@ -251,11 +264,15 @@
     }
     
     .vintage-title {
-      font-size: 4rem;
+      font-size: 5rem;
       letter-spacing: 0.25rem;
     }
     
-    h1 {
+    .university-name {
+      font-size: 1.2rem;
+    }
+    
+    .year-text {
       font-size: 2rem;
     }
     

@@ -56,7 +56,7 @@
   }
 
   h1 {
-    color: #0a1155; /* Dark blue from yearbook cover */
+    color: #8ca5d9; /* Light blue from cover */
     font-size: 2.5rem;
     margin-bottom: 1rem;
   }

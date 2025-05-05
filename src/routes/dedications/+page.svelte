@@ -30,7 +30,7 @@
 </svelte:head>
 
 <section class="dedications-page">
-  <h1>2025 Vintage Dedicatees</h1>
+  <h1 class="dedicatees-title">2025 Vintage Dedicatees</h1>
   
   {#if loading}
     <div class="loading">Loading dedicatee information...</div>
@@ -124,10 +124,14 @@
   }
 
   h1 {
-    color: #0a1155; /* Dark blue from yearbook cover */
+    color: #001142; /* Navy blue from cover */
     font-size: 2.5rem;
     margin-bottom: 2rem;
     text-align: center;
+  }
+  
+  .dedicatees-title {
+    color: #8ca5d9; /* Light blue from cover */
   }
 
   h2 {
@@ -186,7 +190,7 @@
     right: 0;
     width: 100%;
     height: 5px;
-    background: linear-gradient(90deg, #0a1155, #7ab7ff);
+    background: linear-gradient(90deg, #001142, #8ca5d9);
   }
   
   .honoree-card:hover {
@@ -218,7 +222,7 @@
   }
 
   .honoree-info h3 {
-    color: #0a1155;
+    color: #001142; /* Navy blue from cover */
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
     position: relative;
@@ -233,11 +237,11 @@
     left: 0;
     width: 50px;
     height: 3px;
-    background-color: #ffc046;
+    background-color: #e6b93d; /* Gold from cover */
   }
 
   .honoree-title {
-    color: #ffc046; /* Rich gold */
+    color: #e6b93d; /* Gold from cover */
     font-style: italic;
     margin-bottom: 1rem;
     font-weight: 500;
@@ -250,13 +254,13 @@
   .honoree-quote {
     margin: 1.5rem 0;
     padding: 1.5rem;
-    background: linear-gradient(to bottom, rgba(255, 192, 70, 0.1), rgba(255, 192, 70, 0.05));
-    border-left: 3px solid #ffc046;
+    background: linear-gradient(to bottom, rgba(230, 185, 61, 0.1), rgba(230, 185, 61, 0.05));
+    border-left: 3px solid #e6b93d;
     border-radius: 0 8px 8px 0;
   }
   
   .honoree-quote blockquote {
-    color: #0a1155;
+    color: #001142; /* Navy blue from cover */
     font-style: italic;
     position: relative;
     padding-left: 1.5rem;
@@ -268,7 +272,7 @@
     left: 0;
     top: -0.5rem;
     font-size: 2rem;
-    color: #ffc046;
+    color: #e6b93d; /* Gold from cover */
     font-family: Georgia, serif;
   }
 

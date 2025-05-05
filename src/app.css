@@ -11,7 +11,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: var(--text-dark);
-  background: linear-gradient(135deg, #1a2a65 0%, #2a3a8c 50%, #1a2a65 100%);
+  background: linear-gradient(135deg, #001142 0%, #001c5e 50%, #001142 100%);
   background-attachment: fixed;
   background-size: cover;
   min-height: 100vh;
@@ -21,6 +21,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   line-height: 1.3;
   margin-bottom: var(--spacing-md);
+  color: var(--secondary-blue);
 }
 
 p {
@@ -28,13 +29,13 @@ p {
 }
 
 a {
-  color: var(--primary-blue);
+  color: var(--secondary-blue);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: var(--secondary-blue);
+  color: var(--accent-gold);
 }
 
 img {
@@ -66,9 +67,9 @@ img {
 .primary-button {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background: linear-gradient(135deg, var(--primary-blue), #162283);
+  background: var(--primary-blue);
   color: var(--accent-gold);
-  border: none;
+  border: 1px solid var(--accent-gold);
   border-radius: var(--border-radius-sm);
   font-weight: 500;
   cursor: pointer;
@@ -81,7 +82,7 @@ img {
 }
 
 .primary-button:hover {
-  background: linear-gradient(135deg, #162283, var(--primary-blue));
+  background: #001c5e; /* Slightly lighter navy */
   color: var(--accent-gold);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   transform: translateY(-2px);
@@ -99,6 +100,7 @@ img {
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+  border-top: 1px solid var(--accent-gold);
 }
 
 /* Below are sample content files */

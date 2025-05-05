@@ -13,7 +13,7 @@
 
 <style>
   footer {
-    background: linear-gradient(90deg, #0a1155 0%, #162283 100%);
+    background: #001142; /* Navy blue from cover */
     color: #fff;
     padding: 2rem;
     margin-top: 2rem;
@@ -37,7 +37,7 @@
   }
   
   .vintage-text {
-    color: #ffc046;
+    color: #8ca5d9; /* Light blue from cover */
     font-size: 1.3rem;
     font-weight: bold;
     letter-spacing: 1px;
@@ -82,7 +82,7 @@
 
   .footer-info p {
     margin: 0.25rem 0;
-    color: #ffc046; /* Rich gold */
+    color: #e6b93d; /* Gold from cover */
   }
   
   .footer-info p:first-child {

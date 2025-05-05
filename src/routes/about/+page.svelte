@@ -129,17 +129,17 @@
   }
 
   h1 {
-    color: #0a1155;
+    color: #001142; /* Navy blue from cover */
     font-size: 2.5rem;
     margin-bottom: 2rem;
     text-align: center;
   }
 
   h2 {
-    color: #0a1155;
+    color: #001142; /* Navy blue from cover */
     font-size: 1.8rem;
     margin: 2rem 0 1rem;
-    border-bottom: 2px solid #ffcc00; /* Gold from yearbook cover */
+    border-bottom: 2px solid #e6b93d; /* Gold from cover */
     padding-bottom: 0.5rem;
   }
 
@@ -152,7 +152,7 @@
     max-width: 400px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
     border-radius: 8px;
-    border: 3px solid #ffcc00;
+    border: 3px solid #e6b93d; /* Gold from cover */
   }
 
   .theme-section {
@@ -189,14 +189,14 @@
     line-height: 0.8;
     padding-right: 0.5rem;
     padding-top: 0.25rem;
-    color: #0a1155; /* Dark blue from yearbook cover */
+    color: #001142; /* Navy blue from cover */
     font-weight: bold;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
   }
 
   /* Scripture reference styling */
   .scripture-ref {
-    color: #0a1155;
+    color: #001142; /* Navy blue from cover */
     font-weight: 500;
   }
 
@@ -204,8 +204,8 @@
   .pull-quote {
     margin: 2rem 0 2rem 3rem;
     padding: 1.5rem;
-    background-color: rgba(255, 204, 0, 0.1); /* Light gold background */
-    border-left: 4px solid #ffcc00; /* Gold accent */
+    background-color: rgba(230, 185, 61, 0.1); /* Light gold background */
+    border-left: 4px solid #e6b93d; /* Gold accent */
     max-width: 55%;
     position: relative;
     float: right;
@@ -219,7 +219,7 @@
     clear: left;
     margin: 2rem 3rem 2rem 0;
     border-left: none;
-    border-right: 4px solid #ffcc00;
+    border-right: 4px solid #e6b93d;
     text-align: right;
     border-radius: 8px 0 0 8px;
   }
@@ -228,7 +228,7 @@
     font-size: 1.2rem;
     font-style: italic;
     margin: 0 0 0.5rem 0;
-    color: #0a1155;
+    color: #001142; /* Navy blue from cover */
     line-height: 1.4;
   }
 
@@ -260,7 +260,7 @@
       max-width: 100%;
       margin: 2rem 0;
       text-align: left;
-      border-left: 4px solid #ffcc00;
+      border-left: 4px solid #e6b93d;
       border-right: none;
     }
   }

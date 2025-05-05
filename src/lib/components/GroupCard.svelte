@@ -33,6 +33,7 @@
   .group-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    border-top: 2px solid #e6b93d; /* Gold from cover */
   }
 
   .card-image img {
@@ -47,7 +48,7 @@
 
   .card-content h3 {
     margin-top: 0;
-    color: #0a1155; /* Dark blue from yearbook cover */
+    color: #8ca5d9; /* Light blue from cover */
     font-size: 1.5rem;
   }
 

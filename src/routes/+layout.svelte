@@ -7,8 +7,8 @@
 
 <div class="layout">
   <div class="background-waves">
-    <YearbookTheme position="top-full" color="#7ab7ff" opacity="0.4" />
-    <YearbookTheme position="bottom-full" color="#7ab7ff" opacity="0.4" />
+    <YearbookTheme position="top-full" color="#e6b93d" opacity="0.4" style="contour" />
+    <YearbookTheme position="bottom-full" color="#e6b93d" opacity="0.4" style="wave" />
   </div>
   
   <Header />

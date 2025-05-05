@@ -1,25 +1,24 @@
 <script>
   import { onMount } from 'svelte';
   
-  let dedicationsContent = null;
+  let abramsMd = '';
+  let olingerMd = '';
   let loading = true;
   
   onMount(async () => {
     try {
-      // Load dedications content
-      const response = await fetch('/content/dedications/dedications.md');
+      // Load dedicatees content
+      const abramsResponse = await fetch('/content/dedications/abrams.md');
+      const olingerResponse = await fetch('/content/dedications/olinger.md');
       
-      if (!response.ok) {
-        throw new Error('Failed to load dedications content');
+      if (!abramsResponse.ok || !olingerResponse.ok) {
+        throw new Error('Failed to load dedicatees content');
       }
       
-      const markdown = await response.text();
-      
-      // Here you would use a markdown parser like marked
-      // For this example, we'll just use the raw text
-      dedicationsContent = markdown;
+      abramsMd = await abramsResponse.text();
+      olingerMd = await olingerResponse.text();
     } catch (error) {
-      console.error('Error loading dedications content:', error);
+      console.error('Error loading dedicatees content:', error);
     } finally {
       loading = false;
     }
@@ -31,46 +30,85 @@
 </svelte:head>
 
 <section class="dedications-page">
-  <h1>2025 Vintage Honorees</h1>
+  <h1>2025 Vintage Dedicatees</h1>
   
   {#if loading}
-    <div class="loading">Loading honoree information...</div>
-  {:else if !dedicationsContent}
+    <div class="loading">Loading dedicatee information...</div>
+  {:else if !abramsMd || !olingerMd}
     <div class="error-state">
-      <p>Honoree information could not be loaded.</p>
+      <p>Dedicatee information could not be loaded.</p>
     </div>
   {:else}
     <div class="honoree-cards">
       <div class="honoree-card">
         <div class="honoree-image">
-          <img src="/images/dedications/abrams.jpg" alt="Dr. Karen Abrams" />
+          <img src="/images/dedications/abrams.jpg" alt="Linda Abrams" />
         </div>
         <div class="honoree-info">
-          <h3>Dr. Karen Abrams</h3>
-          <p class="honoree-title">Professor of English, 1988-2025</p>
+          <h3>Linda Abrams</h3>
           <div class="honoree-description">
-            <p>Dr. Karen Abrams has dedicated nearly four decades to BJU's English Department, inspiring generations of students with her passion for literature and excellence in writing. Her engaging teaching style made even the most challenging literary works accessible and meaningful to students.</p>
-            <p>Beyond the classroom, Dr. Abrams has been a tireless advocate for the humanities, founding the university's annual Literary Festival which now attracts renowned authors from around the country. Her own scholarly work on redemptive themes in American literature has been published in numerous academic journals and presented at conferences worldwide.</p>
+            <p>Throughout her ministry at Bob Jones University, Linda Abrams has exemplified a dedication and passion for education that inspire her colleagues and students. By the end of this academic year, May 2025, Linda will have completed 43 years of service to BJU.</p>
+            
             <div class="honoree-quote">
-              <blockquote>"My greatest joy has been watching students discover how literature can deepen their understanding of God's truth and humanity's complexity. When a student sees Christ's redemptive narrative echoed in great literature, that's when I know I've succeeded as a teacher."</blockquote>
+              <blockquote>Throughout her ministry at Bob Jones University, Linda Abrams has exemplified a dedication and passion for education that inspire her colleagues and students.</blockquote>
             </div>
+            
+            <p>Linda received a BA in History from Berry College and an MA in Modern European History from the University of Maryland. She also completed graduate work in Political Science from American Public University. She likewise holds a Certificate in Online Teaching from the University of Wisconsin. Her expertise spans eighteenth- and nineteenth-century European history as well as American government, areas of study to which she has made significant contributions through her teaching career and scholarship.</p>
+            
+            <p>As the founder and director of BJU's Center for Effective Teaching and Engaged Learning (CETEL), Linda has been instrumental in enhancing the pedagogical skills of BJU faculty. She directs activities and projects for new faculty members; the CETEL May Institute, which provides professional development sessions for faculty members; and "Edubreaks," seminars on special topics relative to teaching expertise.</p>
+            
+            <div class="honoree-quote">
+              <blockquote>As the founder and director of BJU's Center for Effective Teaching and Engaged Learning (CETEL), Linda has been instrumental in enhancing the pedagogical skills of BJU faculty.</blockquote>
+            </div>
+            
+            <p>Through these contributions, Linda seeks to improve teaching effectiveness and foster experiential learning on campus. According to colleagues, Linda's efforts have elevated the teaching standards at BJU, making her an invaluable asset to the University.</p>
+            
+            <div class="honoree-quote">
+              <blockquote>"Linda is a teacher's teacher," said a friend, "and she understands the needs of both faculty members and students. With this understanding, she empowers others to succeed."</blockquote>
+            </div>
+            
+            <p>Linda's commitment to professional development is evident through her continuous engagement with modern teaching methods, participation in education conferences, and extensive research on educational theory. For twenty-two years she has served as an advisor to the BJU delegation to the South Carolina Student Legislature, leading the group to win "Best Delegation" award fifteen times.</p>
+            
+            <p>In addition to her academic and administrative roles, Linda is a respected political analyst. National media outlets such as The Boston Globe, The Charlotte News and Observer, Die Zeit, and Bloomberg News have featured her interviews, and Greenville's WYFF 4 News frequently highlights Linda as a political analyst. Her expertise lies in the intersection of conservative Christianity and the American political system.</p>
+            
+            <p>Linda's dedication to education extends beyond the classroom. She has led study abroad courses to France and missions teams to rural Kenya and urban South Africa. Her extensive travels enrich her teaching, and she believes integrating literature, music, and art into her classes offers students a well-rounded understanding of the subject matter. Actively involved in her church, she serves in the nursery and teaches Sunday school to elementary and junior high young people. Linda has also completed numerous language courses at BJU to better engage with her church's Spanish-speaking ministry. Linda enjoys traveling with her husband (retired faculty member Carl Abrams), spending time with her grandchildren, and cooking.</p>
+            
+            <p>For her humble spirit, ongoing commitment to Bob Jones University, and desire to show Christ in everything she does, Linda Abrams is the 2025 Vintage co-dedicatee.</p>
           </div>
         </div>
       </div>
       
       <div class="honoree-card">
         <div class="honoree-image">
-          <img src="/images/dedications/olinger.jpg" alt="Dr. Richard Olinger" />
+          <img src="/images/dedications/olinger.jpg" alt="Dr. Dan Olinger" />
         </div>
         <div class="honoree-info">
-          <h3>Dr. Richard Olinger</h3>
-          <p class="honoree-title">Professor of Biblical Studies, 1982-2025</p>
+          <h3>Dr. Dan Olinger</h3>
           <div class="honoree-description">
-            <p>For 43 years, Dr. Richard Olinger has been the cornerstone of BJU's Biblical Studies Department. His profound understanding of Scripture and ability to connect ancient texts to contemporary Christian living has influenced thousands of students who now serve in ministries worldwide.</p>
-            <p>Dr. Olinger's expertise in original biblical languages resulted in his highly respected commentary series that is widely used in seminaries across the nation. His Wednesday evening Bible studies in the student center became a cherished tradition that regularly drew hundreds of students seeking deeper biblical insights.</p>
-            <p>Beyond academic achievements, Dr. Olinger has modeled Christ-like servanthood through his extensive missionary work during summer breaks, leading student teams to unreached areas in Southeast Asia.</p>
+            <p>Throughout his ministry at Bob Jones University, Dr. Dan Olinger has exemplified the qualities of a faithful servant of Jesus Christ: "in work, in conversation, in charity, in spirit, in faith, in purity" (1 Tim. 4:12). By the end of this academic year, May 2025, Dan will have completed 49 total years of service to BJU.</p>
+            
             <div class="honoree-quote">
-              <blockquote>"The Scripture is not merely to be studied, but to be lived. True biblical scholarship always leads to transformed hearts and hands ready to serve."</blockquote>
+              <blockquote>Throughout his ministry at Bob Jones University, Dr. Dan Olinger has exemplified the qualities of a faithful servant of Jesus Christ: "in work, in conversation, in charity, in spirit, in faith, in purity" (1 Tim. 4:12).</blockquote>
+            </div>
+            
+            <p>Having earned a PhD in Theology from Bob Jones University, Dan has taught courses in theology, New Testament, and Old Testament, with special interest in ecclesiology and the Pauline Epistles. As Chair of the Division of Bible, he has been instrumental in shaping undergraduate and graduate theological education at BJU. For 18 years he has led the BJU summer ministry team to Africa, extending his influence and ministry beyond the classroom.</p>
+            
+            <p>Dan's commitment to biblical education is also evident through his extensive teaching experience internationally. He has taught Bible courses in China, Ghana, Kenya, Mexico, Puerto Rico, Saipan, St. Vincent, South Africa, and Zambia. According to a current BJU Seminary student, Dan's global teaching experiences enrich his classes, providing students with a broad perspective on biblical studies.</p>
+            
+            <p>In addition to teaching, Dan has served on the boards of Mission to Haiti and The Shanghai Institute of Health Sciences. He has written extensively for BJU Press publications and speaks regularly at churches, camps, and educational conferences.</p>
+            
+            <div class="honoree-quote">
+              <blockquote>"His dedication to making Bible teaching understandable and lively is a hallmark of his career," says a colleague. Dan hopes his students will not only be well acquainted with but also lovers of God's Word.</blockquote>
+            </div>
+            
+            <p>Dan's approach to Bible teaching goes beyond head knowledge, for he emphasizes the practical application of biblical truth, aiming to instill a heartfelt understanding of the Bible in his students. He is a continual learner, always seeking to grow and improve in his field.</p>
+            
+            <p>During Dan's early career, which included five years as an English Graduate Assistant while completing his seminary degree, he honed his writing skills. His work at BJU Press, which included drafting positional statements for the institution, reflects his commitment to the University's liberal arts focus that aims to develop the whole person. In his current role Dan reflects the University's pursuit of academic excellence, but he likewise maintains a strong focus on the arts. Showcasing his diverse talent, Dan has performed in numerous productions of Shakespeare on campus.</p>
+            
+            <p>Dan and his wife, Pam, are members of Grace Baptist Fellowship in Greenville. They have two daughters and enjoy spending time together as a family.</p>
+            
+            <div class="honoree-quote">
+              <blockquote>For his humble spirit, ongoing commitment to Bob Jones University, and desire to reflect Christ in everything he does, Dr. Dan Olinger is the 2025 Vintage co-dedicatee.</blockquote>
             </div>
           </div>
         </div>
@@ -130,9 +168,7 @@
   }
 
   .honoree-card {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 2rem;
+    display: block;
     background: linear-gradient(to bottom, #ffffff, #f8f8f8);
     border-radius: 16px;
     padding: 2.5rem;
@@ -159,15 +195,13 @@
   }
 
   .honoree-image {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 1rem;
+    margin: 0 auto 2rem;
+    width: 250px;
+    display: block;
   }
 
   .honoree-image img {
     width: 100%;
-    max-width: 250px;
     border-radius: 50%;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     border: 3px solid #ffc046; /* Gold border */
@@ -180,8 +214,7 @@
   }
 
   .honoree-info {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
   }
 
   .honoree-info h3 {

@@ -37,12 +37,11 @@
 </script>
 
 <svelte:head>
-  <title>BJU Vintage 2025</title>
+  <title>Vintage 2025</title>
 </svelte:head>
 
 <section class="hero">
   <div class="hero-content">
-    <h1>Bob Jones University</h1>
     <div class="vintage-title sparkle">VINTAGE</div>
     <h2>2025</h2>
   </div>

@@ -1,5 +1,3 @@
-Vintage Dedicatee—Dan Olinger 
-
 Throughout his ministry at Bob Jones University, Dr. Dan Olinger has exemplified the qualities of a faithful servant of Jesus Christ: “in work, in conversation, in charity, in spirit, in faith, in purity” (1 Tim. 4:12). By the end of this academic year, May 2025, Dan will have completed 49 total years of service to BJU.
 
 Having earned a PhD in Theology from Bob Jones University, Dan has taught courses in theology, New Testament, and Old Testament, with special interest in ecclesiology and the Pauline Epistles. As Chair of the Division of Bible, he has been instrumental in shaping undergraduate and graduate theological education at BJU. For 18 years he has led the BJU summer ministry team to Africa, extending his influence and ministry beyond the classroom.

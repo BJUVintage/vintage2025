@@ -1,5 +1,3 @@
-Vintage Dedicatee—Linda Abrams 
-
 Throughout her ministry at Bob Jones University, Linda Abrams has exemplified a dedication and passion for education that inspire her colleagues and students. By the end of this academic year, May 2025, Linda will have completed 43 years of service to BJU.
 
 Linda received a BA in History from Berry College and an MA in Modern European History from the University of Maryland. She also completed graduate work in Political Science from American Public University. She likewise holds a Certificate in Online Teaching from the University of Wisconsin. Her expertise spans eighteenth- and nineteenth-century European history as well as American government, areas of study to which she has made significant contributions through her teaching career and scholarship.

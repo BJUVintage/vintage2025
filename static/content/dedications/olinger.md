@@ -1,0 +1,15 @@
+Vintage Dedicatee—Dan Olinger 
+
+Throughout his ministry at Bob Jones University, Dr. Dan Olinger has exemplified the qualities of a faithful servant of Jesus Christ: “in work, in conversation, in charity, in spirit, in faith, in purity” (1 Tim. 4:12). By the end of this academic year, May 2025, Dan will have completed 49 total years of service to BJU.
+
+Having earned a PhD in Theology from Bob Jones University, Dan has taught courses in theology, New Testament, and Old Testament, with special interest in ecclesiology and the Pauline Epistles. As Chair of the Division of Bible, he has been instrumental in shaping undergraduate and graduate theological education at BJU. For 18 years he has led the BJU summer ministry team to Africa, extending his influence and ministry beyond the classroom.
+
+Dan's commitment to biblical education is also evident through his extensive teaching experience internationally. He has taught Bible courses in China, Ghana, Kenya, Mexico, Puerto Rico, Saipan, St. Vincent, South Africa, and Zambia. According to a current BJU Seminary student, Dan’s global teaching experiences enrich his classes, providing students with a broad perspective on biblical studies.
+
+In addition to teaching, Dan has served on the boards of Mission to Haiti and The Shanghai Institute of Health Sciences. He has written extensively for BJU Press publications and speaks regularly at churches, camps, and educational conferences. “His dedication to making Bible teaching understandable and lively is a hallmark of his career,” says a colleague. Dan hopes his students will not only be well acquainted with but also lovers of God’s Word. Dan's approach to Bible teaching goes beyond head knowledge, for he emphasizes the practical application of biblical truth, aiming to instill a heartfelt understanding of the Bible in his students. He is a continual learner, always seeking to grow and improve in his field.
+
+During Dan's early career, which included five years as an English Graduate Assistant while completing his seminary degree, he honed his writing skills. His work at BJU Press, which included drafting positional statements for the institution, reflects his commitment to the University’s liberal arts focus that aims to develop the whole person. In his current role Dan reflects the University’s pursuit of academic excellence, but he likewise maintains a strong focus on the arts. Showcasing his diverse talent, Dan has performed in numerous productions of Shakespeare on campus.
+
+Dan and his wife, Pam, are members of Grace Baptist Fellowship in Greenville. They have two daughters and enjoy spending time together as a family. 
+
+For his humble spirit, ongoing commitment to Bob Jones University, and desire to reflect Christ in everything he does, Dr. Dan Olinger is the 2025 Vintage co-dedicatee.

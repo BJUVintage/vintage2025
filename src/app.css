@@ -1,0 +1,172 @@
+@import './lib/styles/variables.css';
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background-color: var(--background-light);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: var(--spacing-md);
+}
+
+p {
+  margin-bottom: var(--spacing-md);
+}
+
+a {
+  color: var(--primary-blue);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--secondary-blue);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Utility classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-1 { margin-top: var(--spacing-sm); }
+.mt-2 { margin-top: var(--spacing-md); }
+.mt-3 { margin-top: var(--spacing-lg); }
+.mt-4 { margin-top: var(--spacing-xl); }
+
+.mb-1 { margin-bottom: var(--spacing-sm); }
+.mb-2 { margin-bottom: var(--spacing-md); }
+.mb-3 { margin-bottom: var(--spacing-lg); }
+.mb-4 { margin-bottom: var(--spacing-xl); }
+
+.primary-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-blue);
+  color: var(--accent-gold);
+  border: none;
+  border-radius: var(--border-radius-sm);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.primary-button:hover {
+  background-color: #162283;
+  color: var(--accent-gold);
+}
+
+.card {
+  background-color: white;
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+/* Below are sample content files */
+
+/* Sample content file: /content/events/welcome-week.md */
+/*
+---
+title: Welcome Week 2024
+date: August 20-24, 2024
+excerpt: The Class of 2028 began their BJU journey with the "Elevate" themed Welcome Week.
+---
+
+# Welcome Week 2024: Elevate
+
+The Class of 2028 was welcomed to campus during the annual Welcome Week festivities. The "Elevate" theme encouraged new students to rise above challenges and pursue excellence in their academic and spiritual lives.
+
+## Highlights
+
+- **Move-In Day**: Residence hall staff and volunteers helped new students settle into their campus homes.
+- **Parent Orientation**: Parents received guidance on supporting their students during the college transition.
+- **Faculty Meet & Greet**: Students connected with professors from their academic departments.
+- **Opening Exercises**: The President delivered a message on the importance of Christian education.
+- **Social Activities**: Students enjoyed games, food, and entertainment designed to foster new friendships.
+
+Welcome Week concluded with the annual First Week Revival services, setting a spiritual foundation for the academic year ahead.
+*/
+
+/* Sample content file: /content/groups/robotics-team.md */
+/*
+---
+title: BJU Robotics Team
+advisor: Dr. William Hayes
+excerpt: The Robotics Team designs, builds, and programs robots for national collegiate competitions.
+---
+
+# BJU Robotics Team
+
+The BJU Robotics Team brings together students from computer science, engineering, and other disciplines to design and build competitive robots. Throughout the 2024-2025 academic year, the team worked on several projects and participated in regional and national competitions.
+
+## 2024-2025 Achievements
+
+- **Third Place** at the Southeastern Robotics Championship
+- **Innovation Award** at the National Collegiate Robotics Challenge
+- **Community Outreach**: Hosted robotics workshops for local middle and high school students
+
+Team members gained valuable experience in programming, mechanical design, electronics, and project management while representing BJU at various technology events.
+
+## Team Members
+
+The 2024-2025 team consisted of 15 students from various majors, including Computer Science, Engineering, and Mathematics. Through collaboration and problem-solving, these students developed innovative solutions to complex robotics challenges.
+
+Under the guidance of faculty advisor Dr. William Hayes, the team continues to grow its capabilities and reputation in collegiate robotics competitions.
+*/
+
+/* Example API Response for /api/events */
+/*
+[
+  "welcome-week",
+  "bible-conference",
+  "fine-arts-festival",
+  "concert-series",
+  "shakespeare-festival",
+  "graduation"
+]
+*/
+
+/* Example API Response for /api/groups */
+/*
+[
+  "robotics-team",
+  "classic-players",
+  "university-band",
+  "cinema-society",
+  "service-council",
+  "premedical-association"
+]
+*/
+
+/* Example API Response for /api/images/events/welcome-week */
+/*
+[
+  "move-in-day.jpg",
+  "parent-orientation.jpg",
+  "faculty-meet-greet.jpg",
+  "student-activities.jpg",
+  "opening-exercises.jpg"
+]
+*/

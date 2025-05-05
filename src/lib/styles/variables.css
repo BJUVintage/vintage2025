@@ -1,14 +1,14 @@
 :root {
   /* Colors from the yearbook cover */
-  --primary-blue: #0a1155;  /* Dark blue */
-  --secondary-blue: #7ab7ff; /* Light blue */
-  --accent-gold: #ffc046;   /* Rich gold */
+  --primary-blue: #001142;  /* Navy blue (background) */
+  --secondary-blue: #8ca5d9; /* Light blue (VINTAGE text) */
+  --accent-gold: #e6b93d;   /* Gold (wavy lines) */
   
   /* Neutral colors */
   --text-dark: #333333;
   --text-light: #ffffff;
   --background-light: #f5f5f5;
-  --background-dark: #0a1155;
+  --background-dark: #001142;
   
   /* Spacing */
   --spacing-xs: 0.25rem;

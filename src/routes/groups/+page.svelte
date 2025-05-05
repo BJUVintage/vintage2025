@@ -25,11 +25,11 @@
 </script>
 
 <svelte:head>
-  <title>Campus Groups | BJU Vintage 2025</title>
+  <title>Groups | BJU Vintage 2025</title>
 </svelte:head>
 
 <section class="groups-page">
-  <h1>Campus Groups</h1>
+  <h1>Groups</h1>
   <p>Discover the diverse student organizations that enriched campus life during the 2024-2025 academic year.</p>
   
   {#if loading}
@@ -59,12 +59,14 @@
     color: #8ca5d9; /* Light blue from cover */
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    text-align: center;
   }
 
   p {
     font-size: 1.2rem;
     color: #444;
     margin-bottom: 2rem;
+    text-align: center;
   }
 
   .groups-grid {

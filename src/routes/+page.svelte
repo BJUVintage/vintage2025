@@ -10,19 +10,33 @@
   let featuredGroups = [];
   let loading = true;
   
+  let featuredSocieties = [];
+
   onMount(async () => {
     try {
       // Load featured content
       const events = await loadAllEvents();
       const groups = await loadAllGroups();
       
-      // Take the first 3 events and groups for the homepage
-      featuredEvents = events.slice(0, 3);
+      // Filter society events
+      const societyEvents = events.filter(event => 
+        event.metadata && event.metadata.category === 'Society'
+      );
+      
+      // Take the first 3 events, societies, and groups for the homepage
+      featuredEvents = events
+        .filter(event => !event.metadata || event.metadata.category !== 'Society')
+        .slice(0, 3);
+      featuredSocieties = societyEvents.slice(0, 3);
       featuredGroups = groups.slice(0, 3);
       
       // Add thumbnail images
       for (let event of featuredEvents) {
         event.imagePath = await getThumbnailImage('events', event.slug);
+      }
+      
+      for (let society of featuredSocieties) {
+        society.imagePath = await getThumbnailImage('events', society.slug);
       }
       
       for (let group of featuredGroups) {
@@ -65,6 +79,23 @@
     </div>
     <div class="view-all">
       <a href="/events">View All Events</a>
+    </div>
+  </section>
+  
+  <section class="featured-section">
+    <h2>Featured Societies</h2>
+    <div class="card-grid">
+      {#each featuredSocieties as society}
+        <EventCard 
+          title={society.metadata.title} 
+          slug={society.slug} 
+          imagePath={society.imagePath}
+          excerpt={society.metadata.excerpt || 'Learn more about this society event...'}
+        />
+      {/each}
+    </div>
+    <div class="view-all">
+      <a href="/societies">View All Societies</a>
     </div>
   </section>
 

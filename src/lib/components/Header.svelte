@@ -5,7 +5,8 @@
   const navLinks = [
     { href: '/', label: 'Home' },
     { href: '/events', label: 'Events' },
-    { href: '/groups', label: 'Campus Groups' },
+    { href: '/societies', label: 'Societies' },
+    { href: '/groups', label: 'Groups' },
     { href: '/dedications', label: 'Dedications' },
     { href: '/about', label: 'About' }
   ];

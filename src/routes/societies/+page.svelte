@@ -4,20 +4,25 @@
   import { loadAllEvents } from '$lib/utils/contentLoader.js';
   import { getThumbnailImage } from '$lib/utils/imageLoader.js';
   
-  let events = [];
+  let societyEvents = [];
   let loading = true;
   
   onMount(async () => {
     try {
       // Load all events
-      events = await loadAllEvents();
+      const allEvents = await loadAllEvents();
+      
+      // Filter for only society events (based on category metadata)
+      societyEvents = allEvents.filter(event => 
+        event.metadata && event.metadata.category === 'Society'
+      );
       
       // Add thumbnail images
-      for (let event of events) {
+      for (let event of societyEvents) {
         event.imagePath = await getThumbnailImage('events', event.slug);
       }
     } catch (error) {
-      console.error('Error loading events:', error);
+      console.error('Error loading society events:', error);
     } finally {
       loading = false;
     }
@@ -25,25 +30,25 @@
 </script>
 
 <svelte:head>
-  <title>Events | BJU Vintage 2025</title>
+  <title>Societies | BJU Vintage 2025</title>
 </svelte:head>
 
-<section class="events-page">
-  <h1>Events</h1>
-  <p>Explore the highlights from the 2024-2025 academic year at BJU.</p>
+<section class="societies-page">
+  <h1 class="societies-title">Societies</h1>
+  <p>Explore the diverse academic and cultural societies that enriched campus life during the 2024-2025 academic year.</p>
   
   {#if loading}
-    <div class="loading">Loading events...</div>
-  {:else if events.length === 0}
-    <div class="empty-state">No events found.</div>
+    <div class="loading">Loading society events...</div>
+  {:else if societyEvents.length === 0}
+    <div class="empty-state">No society events found.</div>
   {:else}
-    <div class="events-grid">
-      {#each events as event}
+    <div class="societies-grid">
+      {#each societyEvents as event}
         <EventCard 
           title={event.metadata.title} 
           slug={event.slug} 
           imagePath={event.imagePath}
-          excerpt={event.metadata.excerpt || 'Learn more about this event...'}
+          excerpt={event.metadata.excerpt || 'Learn more about this society event...'}
         />
       {/each}
     </div>
@@ -51,15 +56,19 @@
 </section>
 
 <style>
-  .events-page {
+  .societies-page {
     margin-bottom: 4rem;
   }
 
   h1 {
-    color: #8ca5d9; /* Light blue from cover */
+    color: #001142; /* Navy blue from cover */
     font-size: 2.5rem;
     margin-bottom: 1rem;
     text-align: center;
+  }
+  
+  .societies-title {
+    color: #8ca5d9; /* Light blue from cover */
   }
 
   p {
@@ -69,7 +78,7 @@
     text-align: center;
   }
 
-  .events-grid {
+  .societies-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
@@ -82,4 +91,3 @@
     color: #666;
   }
 </style>
-

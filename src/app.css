@@ -11,7 +11,10 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: var(--text-dark);
-  background-color: var(--background-light);
+  background: linear-gradient(135deg, #1a2a65 0%, #2a3a8c 50%, #1a2a65 100%);
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -63,25 +66,39 @@ img {
 .primary-button {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background-color: var(--primary-blue);
+  background: linear-gradient(135deg, var(--primary-blue), #162283);
   color: var(--accent-gold);
   border: none;
   border-radius: var(--border-radius-sm);
   font-weight: 500;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
 }
 
 .primary-button:hover {
-  background-color: #162283;
+  background: linear-gradient(135deg, #162283, var(--primary-blue));
   color: var(--accent-gold);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
 }
 
 .card {
-  background-color: white;
+  background: linear-gradient(to bottom, #ffffff, #f8f8f8);
   border-radius: var(--border-radius-md);
   overflow: hidden;
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Below are sample content files */

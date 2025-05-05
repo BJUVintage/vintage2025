@@ -13,9 +13,7 @@
 
 <header>
   <div class="logo-container">
-    <a href="/">
-      <img src="/images/cover/logo.png" alt="BJU Vintage 2025 Logo" />
-    </a>
+    <a href="/" class="vintage-text">Vintage</a>
   </div>
   <nav>
     <ul>
@@ -34,12 +32,61 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #0a1155; /* Dark blue from yearbook cover */
+    background: linear-gradient(90deg, #0a1155 0%, #162283 100%);
     color: #fff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 10;
   }
 
-  .logo-container img {
-    height: 60px;
+  .logo-container {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .vintage-text {
+    color: #ffc046;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  .vintage-text::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      -45deg, 
+      rgba(255, 255, 255, 0) 0%, 
+      rgba(255, 255, 255, 0) 40%, 
+      rgba(255, 255, 255, 0.3) 50%, 
+      rgba(255, 255, 255, 0) 60%, 
+      rgba(255, 255, 255, 0) 100%
+    );
+    background-size: 200% 200%;
+    background-position: 100% 100%;
+    animation: headerSparkle 5s infinite;
+    top: 0;
+    left: 0;
+    mix-blend-mode: overlay;
+    pointer-events: none;
+  }
+  
+  @keyframes headerSparkle {
+    0% {
+      background-position: 100% 100%;
+    }
+    50% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
   }
 
   nav ul {
@@ -53,17 +100,33 @@
   nav a {
     color: #ffcc00; /* Gold from yearbook cover */
     text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    position: relative;
+    letter-spacing: 0.5px;
   }
 
   nav a:hover {
-    color: #7ab7ff; /* Light blue from yearbook cover */
+    color: #ffffff;
+    background-color: rgba(122, 183, 255, 0.1); /* Light blue with transparency */
   }
 
   .active a {
-    color: #7ab7ff;
-    border-bottom: 2px solid #7ab7ff;
+    color: #ffffff;
+    position: relative;
+  }
+  
+  .active a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #7ab7ff, #ffcc00);
+    border-radius: 2px;
   }
 
   @media (max-width: 768px) {

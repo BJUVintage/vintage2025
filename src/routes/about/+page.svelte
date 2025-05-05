@@ -70,7 +70,6 @@
     <div class="theme-section">
       <h2>2025 Theme</h2>
       <div class="theme-content">
-        <YearbookTheme position="top-right" color="#ffcc00" />
         <div class="content">
           <!-- First paragraph -->
           <p class="intro"><span class="drop-cap">W</span>isdom was in the beginning with God as He created the world <span class="scripture-ref">(Genesis 1:26, John 1:1)</span>. Formed in the image of the Creator, we humans have mined God's creation for gold and silver, iron and copper. We have dammed up mighty rivers, forming lakes and generating power. We have explored the oceans and conquered peaks <span class="scripture-ref">(Job 28)</span>. But when we enter an academic setting, we tend to focus only on knowledge. We search textbooks, perform experiments, and complete projects, seeking to broaden our pool of knowledge and to expand our sphere of influence.</p>
@@ -111,50 +110,26 @@
           <!-- Sixth paragraph -->
           <p>Wisdom is not something we can mine from a mountain or discover at the bottom of the sea. Rather, it is a daily surrender of our lives according to God's great design. Our diligent pursuit of wisdom requires turning away from evil and fearing the Lord. To become wise, we must follow the One who knows where wisdom is found.</p>
         </div>
-        <YearbookTheme position="bottom-left" color="#ffcc00" />
       </div>
     </div>
   {/if}
   
-  <div class="staff-section">
-    <h2>Yearbook Staff</h2>
-    <div class="staff-list">
-      <div class="staff-member">
-        <h3>Editor-in-Chief</h3>
-        <p>Student Name</p>
-      </div>
-      <div class="staff-member">
-        <h3>Assistant Editor</h3>
-        <p>Student Name</p>
-      </div>
-      <div class="staff-member">
-        <h3>Photography Director</h3>
-        <p>Student Name</p>
-      </div>
-      <div class="staff-member">
-        <h3>Layout Designer</h3>
-        <p>Student Name</p>
-      </div>
-      <div class="staff-member">
-        <h3>Copy Editor</h3>
-        <p>Student Name</p>
-      </div>
-      <div class="staff-member">
-        <h3>Faculty Advisor</h3>
-        <p>Faculty Name</p>
-      </div>
-    </div>
-  </div>
 </section>
 
 <style>
   .about-page {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 2rem auto;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f4ff 100%);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    color: #333;
+    border: 1px solid rgba(122, 183, 255, 0.3);
   }
 
   h1 {
-    color: #0a1155; /* Dark blue from yearbook cover */
+    color: #0a1155;
     font-size: 2.5rem;
     margin-bottom: 2rem;
     text-align: center;
@@ -175,8 +150,9 @@
 
   .cover-display img {
     max-width: 400px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
     border-radius: 8px;
+    border: 3px solid #ffcc00;
   }
 
   .theme-section {
@@ -185,10 +161,11 @@
 
   .theme-content {
     position: relative;
-    background-color: #f8f8f8;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.2);
   }
 
   .theme-content .content {
@@ -196,6 +173,7 @@
     z-index: 1;
     line-height: 1.8;
     font-size: 1.05rem;
+    color: #333;
   }
 
   /* Paragraph styling */
@@ -211,8 +189,9 @@
     line-height: 0.8;
     padding-right: 0.5rem;
     padding-top: 0.25rem;
-    color: #7ab7ff; /* Light blue from yearbook cover */
+    color: #0a1155; /* Dark blue from yearbook cover */
     font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
   }
 
   /* Scripture reference styling */
@@ -231,6 +210,8 @@
     position: relative;
     float: right;
     clear: right;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0 8px 8px 0;
   }
 
   .pull-quote.right {
@@ -240,6 +221,7 @@
     border-left: none;
     border-right: 4px solid #ffcc00;
     text-align: right;
+    border-radius: 8px 0 0 8px;
   }
 
   .pull-quote blockquote {
@@ -252,33 +234,10 @@
 
   .pull-quote cite {
     font-size: 0.9rem;
-    color: #555;
+    color: #666;
     font-style: normal;
     display: block;
-  }
-
-  .staff-section {
-    margin: 3rem 0;
-    clear: both;
-  }
-
-  .staff-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 2rem;
-  }
-
-  .staff-member {
-    background-color: #f8f8f8;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-
-  .staff-member h3 {
-    color: #7ab7ff; /* Light blue from yearbook cover */
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+    font-weight: 500;
   }
 
   .loading, .error-state {
@@ -286,6 +245,8 @@
     padding: 3rem;
     font-style: italic;
     color: #666;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
   }
 
   /* Responsive adjustments */

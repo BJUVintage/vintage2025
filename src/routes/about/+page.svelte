@@ -15,9 +15,6 @@
       }
       
       const markdown = await response.text();
-      
-      // Here you would use a markdown parser like marked
-      // For this example, we'll just use the raw text
       themeContent = markdown;
     } catch (error) {
       console.error('Error loading theme content:', error);
@@ -25,6 +22,31 @@
       loading = false;
     }
   });
+
+  // Function to format the theme text with paragraph breaks
+  function formatThemeContent(text) {
+    if (!text) return '';
+    
+    // Split the text into paragraphs
+    const paragraphs = text.split('\n\n');
+    
+    // Process each paragraph
+    return paragraphs.map((paragraph, index) => {
+      // Add scripture references in span for styling
+      const processedText = paragraph.replace(/\(([\w\s]+\d+:\d+(?:-\d+)?(?:,\s*[\w\s]+\d+:\d+(?:-\d+)?)*)\)/g, 
+        (match, reference) => `<span class="scripture-ref">${match}</span>`);
+      
+      // Add a class to the first paragraph for the drop cap
+      if (index === 0) {
+        const firstChar = processedText.charAt(0);
+        const restOfText = processedText.slice(1);
+        return `<p class="intro"><span class="drop-cap">${firstChar}</span>${restOfText}</p>`;
+      }
+      
+      // Regular paragraphs after that
+      return `<p>${processedText}</p>`;
+    }).join('');
+  }
 </script>
 
 <svelte:head>
@@ -50,8 +72,44 @@
       <div class="theme-content">
         <YearbookTheme position="top-right" color="#ffcc00" />
         <div class="content">
-          <!-- Display theme content -->
-          <p>{themeContent}</p>
+          <!-- First paragraph -->
+          <p class="intro"><span class="drop-cap">W</span>isdom was in the beginning with God as He created the world <span class="scripture-ref">(Genesis 1:26, John 1:1)</span>. Formed in the image of the Creator, we humans have mined God's creation for gold and silver, iron and copper. We have dammed up mighty rivers, forming lakes and generating power. We have explored the oceans and conquered peaks <span class="scripture-ref">(Job 28)</span>. But when we enter an academic setting, we tend to focus only on knowledge. We search textbooks, perform experiments, and complete projects, seeking to broaden our pool of knowledge and to expand our sphere of influence.</p>
+
+          <!-- Second paragraph -->
+          <p>Despite mankind's amazing accomplishments, though, knowledge remains inadequate to answer the really significant like questions like What job should I apply for? Whom should I marry? Where should I live? and most fundamentally Why am I alive? Only wisdom, which according to <span class="scripture-ref">Proverbs 8:11</span> is more valuable than precious jewels, provide ultimate answers.</p>
+          
+
+          <!-- First pull quote -->
+          <div class="pull-quote right">
+            <blockquote>"If any of you lack wisdom, let him ask of God, that giveth to all men liberally"</blockquote>
+            <cite>James 1:5</cite>
+          </div>
+          
+          <!-- Third paragraph -->
+          <p>Solomon dedicated his life to gaining wisdom, but he discovered his search to be "striving after wind" <span class="scripture-ref">(Ecclesiastes 1:17)</span>. Job, lamenting this same dilemma, cries out to God: "But where shall wisdom be found? And where is the place of understanding? Man knoweth not the price thereof; neither is it found in the land of the living" <span class="scripture-ref">(Job 28:12-13)</span>. Job recognizes that wisdom is "hid from the eyes of the living, And kept close from the fowls of the air. Death and destruction say, We have heard the fame thereof with our ears" <span class="scripture-ref">(Job 28:21-22)</span>. Wisdom seems unattainable, but Solomon exhorts us to pursue it; the consequences of neglecting wisdom are severe <span class="scripture-ref">(Ecclesiastes 12)</span>.</p>
+
+          <!-- Second pull quote -->
+          <div class="pull-quote">
+            <blockquote>"Behold, the fear of the Lord, that is wisdom, and to turn away from evil, is understanding"</blockquote>
+            <cite>Job 28:28</cite>
+          </div>
+
+          
+          <!-- Fourth paragraph -->
+          <p>Just as our Great Provider fills the earth with the valuable resources for man's consumption, so he supplies the path to wisdom: "Behold, the fear of the Lord, that is wisdom, and to turn away from evil, is understanding" <span class="scripture-ref">(Job 28:28)</span>. Our God sees beyond limited human endeavors. <span class="scripture-ref">James 1:5</span> says, "If any of you lack wisdom, let him ask of God, that giveth to all men liberally, and upbraideth not; and it shall be given him." With God's promise to supply wisdom, we can stand in awe of the Creator as well as his creation <span class="scripture-ref">(Psalm 33, Proverbs 8)</span>. He raises the mountains; he carves the rivers; he measures the thunder, wind, and rain; and he sets the stars in motion.</p>
+          
+          
+          <!-- Fifth paragraph -->
+          <p>With confidence, we can enjoy the greatness of our God. However, we must also align our decisions with his will. <span class="scripture-ref">Proverbs 3:5-6</span> says, "Trust in the LORD with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths." In addition to guiding our paths, God gives us access to his Son, Jesus, who is wisdom incarnate. Christ is our "righteousness and sanctification and redemption, so that, as it is written, 'Let the one who boasts, boast in the Lord'"<span class="scripture-ref">(1 Corinthians 1:30-31)</span>.</p>
+          
+          <!-- Third pull quote -->
+          <div class="pull-quote right">
+            <blockquote>"Trust in the LORD with all thine heart; and lean not unto thine own understanding."</blockquote>
+            <cite>Proverbs 3:5-6</cite>
+          </div>
+          
+          <!-- Sixth paragraph -->
+          <p>Wisdom is not something we can mine from a mountain or discover at the bottom of the sea. Rather, it is a daily surrender of our lives according to God's great design. Our diligent pursuit of wisdom requires turning away from evil and fearing the Lord. To become wise, we must follow the One who knows where wisdom is found.</p>
         </div>
         <YearbookTheme position="bottom-left" color="#ffcc00" />
       </div>
@@ -136,10 +194,72 @@
   .theme-content .content {
     position: relative;
     z-index: 1;
+    line-height: 1.8;
+    font-size: 1.05rem;
+  }
+
+  /* Paragraph styling */
+  .content p {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+  }
+
+  /* First letter styling (drop cap) */
+  .drop-cap {
+    float: left;
+    font-size: 3.5rem;
+    line-height: 0.8;
+    padding-right: 0.5rem;
+    padding-top: 0.25rem;
+    color: #7ab7ff; /* Light blue from yearbook cover */
+    font-weight: bold;
+  }
+
+  /* Scripture reference styling */
+  .scripture-ref {
+    color: #0a1155;
+    font-weight: 500;
+  }
+
+  /* Pull quote styling */
+  .pull-quote {
+    margin: 2rem 0 2rem 3rem;
+    padding: 1.5rem;
+    background-color: rgba(255, 204, 0, 0.1); /* Light gold background */
+    border-left: 4px solid #ffcc00; /* Gold accent */
+    max-width: 55%;
+    position: relative;
+    float: right;
+    clear: right;
+  }
+
+  .pull-quote.right {
+    float: left;
+    clear: left;
+    margin: 2rem 3rem 2rem 0;
+    border-left: none;
+    border-right: 4px solid #ffcc00;
+    text-align: right;
+  }
+
+  .pull-quote blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin: 0 0 0.5rem 0;
+    color: #0a1155;
+    line-height: 1.4;
+  }
+
+  .pull-quote cite {
+    font-size: 0.9rem;
+    color: #555;
+    font-style: normal;
+    display: block;
   }
 
   .staff-section {
     margin: 3rem 0;
+    clear: both;
   }
 
   .staff-list {
@@ -167,5 +287,20 @@
     font-style: italic;
     color: #666;
   }
-</style>
 
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .theme-content {
+      padding: 1.5rem;
+    }
+
+    .pull-quote, .pull-quote.right {
+      float: none;
+      max-width: 100%;
+      margin: 2rem 0;
+      text-align: left;
+      border-left: 4px solid #ffcc00;
+      border-right: none;
+    }
+  }
+</style>

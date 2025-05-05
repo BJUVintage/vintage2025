@@ -53,7 +53,7 @@ vintage-2025/
 │   │       │   └── ...
 │   │       └── [other-groups]/...
 │   └── favicon.png
-├── content/
+├── static/content/
 │   ├── events/
 │   │   ├── welcome-week.md
 │   │   └── [other-events].md

@@ -1,10 +1,10 @@
 ---
-title: Annual Harvest Festival
+title: Harvest Fest
 date: October 2024
 excerpt: The fifth annual Harvest Festival featured a campus-wide treat trail, creative costumes, and competition for best individual and group costumes.
 ---
 
-# Fall Fest
+# Harvest Fest
 
 Now in its fifth year, the annual Harvest Festival brought a lively
 spirit to campus as students and faculty embraced the season with

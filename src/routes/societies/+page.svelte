@@ -48,11 +48,29 @@
         event.metadata && event.metadata.category === 'Society'
       );
       
-      // Sort society events by date
+      // Create a custom order for society events based on logical academic year flow
+      const customSocietyOrder = [
+        "society-rush",           // Beginning of year society event
+        "slc-and-isc",            // Student leadership related
+        "turkey-bowl"             // Later in the year competition
+      ];
+      
+      // Sort society events using the custom order array
       societyEvents.sort((a, b) => {
-        const dateA = parseEventDate(a.metadata?.date);
-        const dateB = parseEventDate(b.metadata?.date);
-        return dateA - dateB;
+        const indexA = customSocietyOrder.indexOf(a.slug);
+        const indexB = customSocietyOrder.indexOf(b.slug);
+        
+        // If both events are in our custom order, use that order
+        if (indexA !== -1 && indexB !== -1) {
+          return indexA - indexB;
+        }
+        
+        // If only one is in the custom order, prioritize it
+        if (indexA !== -1) return -1;
+        if (indexB !== -1) return 1;
+        
+        // Otherwise, sort alphabetically by title as fallback
+        return a.metadata?.title.localeCompare(b.metadata?.title);
       });
       
       // Add thumbnail images
@@ -74,7 +92,6 @@
 <section class="societies-page">
   <div class="page-header">
     <h1 class="societies-title">Societies</h1>
-    <p>Explore the diverse academic and cultural societies that enriched campus life during the 2024-2025 academic year.</p>
   </div>
   
   {#if loading}

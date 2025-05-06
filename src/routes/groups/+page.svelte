@@ -43,7 +43,6 @@
 <section class="groups-page">
   <div class="page-header">
     <h1>Groups</h1>
-    <p>Discover the diverse student organizations that enriched campus life during the 2024-2025 academic year.</p>
   </div>
   
   {#if loading}

@@ -48,11 +48,41 @@
         !event.metadata || event.metadata.category !== 'Society'
       );
       
-      // Sort events by date
+      // Create a custom order for events based on logical academic year flow
+      const customEventOrder = [
+        "welcome-week",           // Start of the year
+        "new-president",          // Major announcement at start of year
+        "fall-fest",              // Early fall event
+        "harvest-fest",           // Fall event
+        "hurricane-helene",       // Weather event in fall semester
+        "bible-conference",       // Usually winter event
+        "christmas",              // December
+        "evangelistic-services",  // Often winter/spring
+        "student-led-chapel",     // Throughout year but highlight in listing
+        "chapel",                 // Throughout year
+        "art-exhibitions",        // Usually spring semester
+        "artist-series",          // Usually spring semester
+        "theater",                // Often spring productions
+        "campus-renovations",     // Often announced/featured in spring
+        "commencement"            // End of year
+      ];
+      
+      // Sort events using the custom order array
       events.sort((a, b) => {
-        const dateA = parseEventDate(a.metadata?.date);
-        const dateB = parseEventDate(b.metadata?.date);
-        return dateA - dateB;
+        const indexA = customEventOrder.indexOf(a.slug);
+        const indexB = customEventOrder.indexOf(b.slug);
+        
+        // If both events are in our custom order, use that order
+        if (indexA !== -1 && indexB !== -1) {
+          return indexA - indexB;
+        }
+        
+        // If only one is in the custom order, prioritize it
+        if (indexA !== -1) return -1;
+        if (indexB !== -1) return 1;
+        
+        // Otherwise, sort alphabetically by title as fallback
+        return a.metadata?.title.localeCompare(b.metadata?.title);
       });
       
       // Add thumbnail images
@@ -74,7 +104,6 @@
 <section class="events-page">
   <div class="page-header">
     <h1>Events</h1>
-    <p>Explore the highlights from the 2024-2025 academic year at BJU.</p>
   </div>
   
   {#if loading}

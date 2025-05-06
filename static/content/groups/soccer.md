@@ -1,6 +1,5 @@
 ---
 title: Soccer
-advisor: Faculty Advisor
 excerpt: Our soccer program combines athletic excellence with character development as players compete at the highest collegiate levels...
 ---
 

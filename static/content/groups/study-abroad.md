@@ -1,6 +1,5 @@
 ---
 title: Study Abroad
-advisor: Faculty Advisor
 excerpt: Our study abroad programs transform students through immersive cultural experiences and academic challenges in international settings...
 ---
 

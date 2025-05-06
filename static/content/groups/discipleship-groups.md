@@ -1,6 +1,5 @@
 ---
 title: Discipleship Groups
-advisor: Faculty Advisor
 excerpt: Our student-led discipleship groups provide safe spaces for spiritual growth, meaningful conversation, and authentic community...
 ---
 

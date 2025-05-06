@@ -1,6 +1,5 @@
 ---
 title: Campus Media
-advisor: Faculty Advisor
 excerpt: Our campus media teams capture the stories and moments that define our university experience through various platforms...
 ---
 

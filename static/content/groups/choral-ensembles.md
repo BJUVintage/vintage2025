@@ -1,6 +1,5 @@
 ---
 title: Choral Ensembles
-advisor: Music Department Faculty
 excerpt: Five diverse choral groups provide students with opportunities to showcase musical talent and minister in local churches.
 ---
 

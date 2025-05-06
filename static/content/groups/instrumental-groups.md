@@ -1,6 +1,5 @@
 ---
 title: Instrumental Groups
-advisor: Faculty Advisor
 excerpt: Our instrumental music ensembles showcase student talent across a variety of musical traditions and styles throughout the academic year...
 ---
 

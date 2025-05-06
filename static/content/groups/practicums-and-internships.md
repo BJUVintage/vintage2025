@@ -1,6 +1,5 @@
 ---
 title: Practicums and Internships
-advisor: Faculty Advisor
 excerpt: Our practicum and internship programs bridge classroom learning with real-world application, providing students with invaluable professional...
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: Seminary
-advisor: Faculty Advisor
 excerpt: Our seminary program prepares thoughtful, compassionate spiritual leaders through rigorous theological education and practical ministry training...
 ---
 

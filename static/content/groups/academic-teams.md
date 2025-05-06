@@ -1,6 +1,5 @@
 ---
 title: Academic Competition Teams
-advisor: Various Faculty Advisors
 excerpt: Teams in robotics, biology, government, and computer programming develop skills through collaboration and state/national competitions.
 ---
 

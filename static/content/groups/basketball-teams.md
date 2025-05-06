@@ -1,6 +1,5 @@
 ---
 title: Basketball Teams
-advisor: Coach Burton Uwarow
 excerpt: The men's and women's basketball teams represented the university with excellence, with the men's team earning the region championship title.
 ---
 

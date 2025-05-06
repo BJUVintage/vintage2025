@@ -53,7 +53,7 @@
         {@html event.content}
       </div>
       
-      {#if images.length > 0}
+      {#if images && images.length > 0}
         <section class="event-photos">
           <h2>Photo Gallery</h2>
           <PhotoGallery 

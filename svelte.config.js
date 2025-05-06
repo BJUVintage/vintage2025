@@ -9,7 +9,7 @@ export default {
       precompress: false
     }),
     prerender: {
-      entries: ['*', '/api/events', '/api/groups']
+      entries: ['*']
     }
   }
 };

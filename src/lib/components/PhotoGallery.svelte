@@ -8,6 +8,15 @@
   let loading = true;
   let currentImageIndex = 0;
   
+  // Helper function to get base URL
+  function getBaseUrl() {
+    if (typeof window !== 'undefined') {
+      const url = new URL(window.location.href);
+      return url.origin; // e.g., "https://your-s3-bucket.amazonaws.com"
+    }
+    return ''; // During SSR
+  }
+  
   // Create thumbnail and full image URLs
   const imageUrls = images.map(image => {
     // Handle case where image might already have _thumb or _compressed suffix
@@ -23,10 +32,19 @@
     fileName = baseName.split('.')[0];
     extension = baseName.split('.').pop();
     
+    // Make URLs absolute
+    const baseUrl = getBaseUrl();
+    
+    // If baseDir already starts with http or / leave it, otherwise add leading slash
+    let normalizedBaseDir = baseDir;
+    if (!normalizedBaseDir.startsWith('http') && !normalizedBaseDir.startsWith('/')) {
+      normalizedBaseDir = '/' + normalizedBaseDir;
+    }
+    
     return {
-      original: `${baseDir}/${baseName}`,
-      thumbnail: `${baseDir}/${fileName}_thumb.${extension}`,
-      compressed: `${baseDir}/${fileName}_compressed.${extension}`,
+      original: `${baseUrl}${normalizedBaseDir}/${baseName}`,
+      thumbnail: `${baseUrl}${normalizedBaseDir}/${fileName}_thumb.${extension}`,
+      compressed: `${baseUrl}${normalizedBaseDir}/${fileName}_compressed.${extension}`,
       fileName: baseName
     };
   });

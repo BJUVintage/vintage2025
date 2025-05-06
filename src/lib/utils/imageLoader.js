@@ -58,7 +58,14 @@ export async function getThumbnailImage(type, slug) {
       if (images[0] === 'placeholder.jpg') {
         return `/images/${type}/placeholder/placeholder.jpg`;
       }
-      return `/images/${type}/${slug}/${images[0]}`;
+      
+      // Use compressed version for thumbnails
+      const imageName = images[0];
+      const ext = imageName.split('.').pop();
+      const baseName = imageName.substring(0, imageName.length - ext.length - 1);
+      
+      // Always use the compressed version for thumbnails on listing pages
+      return `/images/${type}/${slug}/${baseName}_compressed.${ext}`;
     }
     
     // Return fallback to cover image when no specific images found

@@ -20,12 +20,14 @@ export async function GET({ params }) {
       return json(["placeholder.jpg"]);
     }
     
-    // Get all JPG/JPEG/PNG images from the directory
+    // Get all JPG/JPEG/PNG images from the directory, excluding thumbnails and compressed versions
     const imageFiles = fs.readdirSync(imageDir)
       .filter(file => 
-        file.toLowerCase().endsWith('.jpg') || 
-        file.toLowerCase().endsWith('.jpeg') ||
-        file.toLowerCase().endsWith('.png'))
+        (file.toLowerCase().endsWith('.jpg') || 
+         file.toLowerCase().endsWith('.jpeg') ||
+         file.toLowerCase().endsWith('.png')) && 
+        !file.includes('_thumb.') && 
+        !file.includes('_compressed.'))
       .sort();
       
     if (imageFiles.length === 0) {

@@ -6,7 +6,7 @@
     { href: '/', label: 'Home' },
     { href: '/events', label: 'Events' },
     { href: '/groups', label: 'Groups' },
-    { href: '/societies', label: 'Societies' },
+    { href: '/societies', label: 'Society Events' },
     { href: '/dedications', label: 'Dedications' },
     { href: '/about', label: 'About' }
   ];

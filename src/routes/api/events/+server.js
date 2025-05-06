@@ -18,7 +18,7 @@ export async function GET() {
       "chapel",
       "christmas",
       "commencement",
-      "fall-fest",
+      "harvest-fest",
       "homecoming",
       "hurricane-helene",
       "new-president",

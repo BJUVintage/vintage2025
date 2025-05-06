@@ -108,7 +108,7 @@
   </section>
 
   <section class="featured-section">
-    <h2>Featured Societies</h2>
+    <h2>Featured Society Events</h2>
     <div class="card-grid">
       {#each featuredSocieties as society}
         <EventCard 
@@ -121,7 +121,7 @@
       {/each}
     </div>
     <div class="view-all">
-      <a href="/societies">View All Societies</a>
+      <a href="/societies">View All Society Events</a>
     </div>
   </section>
 {/if}

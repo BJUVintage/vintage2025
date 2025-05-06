@@ -47,7 +47,7 @@
     <div class="error-state">
       <h2>Event Not Found</h2>
       <p>The requested society event could not be found.</p>
-      <a href="/societies">Back to Societies</a>
+      <a href="/societies">Back to Society Events</a>
     </div>
   {:else}
     <div class="society-card">
@@ -73,7 +73,7 @@
       {/if}
       
       <div class="back-link">
-        <a href="/societies">← Back to All Societies</a>
+        <a href="/societies">← Back to All Society Events</a>
       </div>
     </div>
   {/if}

@@ -1,14 +1,44 @@
 <script>
+  import { onMount } from 'svelte';
   export let title;
   export let slug;
   export let imagePath;
   export let excerpt;
   export let category = null;
+  
+  let displayImagePath = imagePath;
+  let imageLoaded = false;
+  let fallbackPath = '';
+  
+  // Extract original path in case the compressed version doesn't exist
+  onMount(() => {
+    // If path includes _compressed, create fallback to original
+    if (imagePath.includes('_compressed.')) {
+      fallbackPath = imagePath.replace('_compressed.', '.');
+    }
+  });
+  
+  // Handle image error by switching to fallback
+  function handleImageError() {
+    if (fallbackPath && !imageLoaded) {
+      displayImagePath = fallbackPath;
+    }
+  }
+  
+  // Record successful image load
+  function handleImageLoad() {
+    imageLoaded = true;
+  }
 </script>
 
 <a href={category === 'Society' ? `/societies/${slug}` : `/events/${slug}`} class="event-card">
   <div class="card-image">
-    <img src={imagePath} alt={title} />
+    <img 
+      src={displayImagePath} 
+      alt={title} 
+      on:error={handleImageError}
+      on:load={handleImageLoad}
+    />
   </div>
   <div class="card-content">
     <h3>{title}</h3>

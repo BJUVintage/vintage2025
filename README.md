@@ -78,3 +78,23 @@ vintage-2025/
 2. Add images to this folder
 3. Create a new markdown file in `/content/events/` or `/content/groups/` with the same name
 4. The system will automatically include the new content on the website
+
+## Performance Optimization for Images
+For better performance with large image galleries:
+
+1. Run the thumbnail generator script to create optimized versions of all images:
+   ```bash
+   # Install ImageMagick first (required for image processing)
+   # Ubuntu/Debian: sudo apt-get install imagemagick
+   # macOS: brew install imagemagick
+   # Windows: Download from https://imagemagick.org/script/download.php
+
+   # Then run the script
+   node scripts/generate-thumbnails.js
+   ```
+
+2. This will create two optimized versions of each image:
+   - `image_thumb.jpg` - Small thumbnail (180px height) for gallery view
+   - `image_compressed.jpg` - Medium-sized version (1000px max) for faster viewing
+
+3. The PhotoGallery component will automatically use these optimized versions when available, falling back to the original high-resolution image when needed.

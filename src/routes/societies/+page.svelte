@@ -85,12 +85,12 @@
 </script>
 
 <svelte:head>
-  <title>Societies | BJU Vintage 2025</title>
+  <title>Society Events | BJU Vintage 2025</title>
 </svelte:head>
 
 <section class="societies-page">
   <div class="page-header">
-    <h1 class="societies-title">Societies</h1>
+    <h1 class="societies-title">Society Events</h1>
   </div>
   
   {#if loading}

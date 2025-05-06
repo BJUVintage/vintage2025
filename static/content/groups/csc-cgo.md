@@ -4,7 +4,8 @@ advisor: Faculty Advisor
 excerpt: The Community Service Council (CSC) promotes ministry opportunities in Greenville. This year, the student-led organization connected students with civic projects such as cleaning up...
 ---
 
-# CSC & CGO
+# **CSC & CGO**
+
 
 The Community Service Council (CSC) promotes ministry opportunities in
 Greenville. This year, the student-led organization connected students

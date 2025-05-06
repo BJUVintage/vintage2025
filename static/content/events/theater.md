@@ -4,6 +4,25 @@ date: 2024-2025 Academic Year
 excerpt: The Theatre Department delivered an exceptional season of performances that showcased student talent across a diverse range of theatrical genres...
 ---
 
-# Theater Productions
+# Dramatic Theatrical Productions
 
-The Theatre Department delivered an exceptional season of performances that showcased student talent across a diverse range of theatrical genres. The fall semester opened with Shakespeare's "Much Ado About Nothing," set in 1940s post-war America with innovative staging that earned critical acclaim from local reviewers. The annual Christmas production, "A Christmas Carol," sold out all eight performances and continued the tradition of community outreach by offering two special matinees for area schoolchildren. Winter featured the thought-provoking contemporary drama "Proof" by David Auburn, which challenged audiences with its exploration of mental illness, mathematics, and family dynamics. The spring musical, "Into the Woods," represented the department's most ambitious production in recent years, featuring complex musical arrangements, elaborate set design, and collaborative work with the Music Department. The season concluded with the Student Directing Showcase, presenting four one-act plays entirely produced, directed, and performed by students. Beyond entertainment, these productions provided practical experience in all aspects of theatrical production, from acting and directing to set construction, lighting design, costume creation, and stage management.
+
+The dramatic theatrical productions of 2024-25 captivated audiences,
+bringing to life a variety of scripts performed before students,
+faculty, and the local community. BJU's *Bake-Off* provided students an
+opportunity in the fall to challenge their creativity through an intense
+competition. Students first attend an information meeting to learn the
+writing prompt as well as the phrases and props that determine play
+qualifications. Each script must then be written in less than 24 hours.
+The judges select the four best student plays, each of which is
+performed by a student cast and crew the same weekend.
+
+In October, Performance Hall featured Frederick Knott's thriller *Wait
+Until Dark*, a play demonstrating the theatre department's theme of
+joyful courage. The dynamic stage adaptation of *Sense & Sensibility* in
+April brought Jane Austen's classic to life, blending wit, romance, and
+drama as the Dashwood sisters navigate love and society. The performance
+captivated audiences with its lively ensemble, period charm, and
+heartfelt storytelling. The theatre department also premiered "Argus and
+the Maze of Myth," an original play by BJU graduate student Jonathan
+Klukow.

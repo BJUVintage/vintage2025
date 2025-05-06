@@ -4,6 +4,17 @@ advisor: Faculty Advisor
 excerpt: Missions Advance serves as our campus hub for global engagement, connecting students with opportunities to explore vocational calling through...
 ---
 
-# Missions Advance
+# **Missions Advance & Outreaches**
 
-Missions Advance serves as our campus hub for global engagement, connecting students with opportunities to explore vocational calling through service. This student organization coordinates awareness events, fundraising initiatives, and educational programming to highlight global needs and partnership opportunities. Through regular meetings and special events, participants develop a deeper understanding of cross-cultural ministry while preparing for both short-term experiences and potential long-term international service.
+
+Missions Advance introduces students to global ministry with special
+emphasis on world-wide evangelism. Students, by engaging with first-hand
+missionary reports, gain a global perspective on how the Gospel can be
+advanced and how they can be involved. Additionally, by reading
+missionary letters, students understand the reality of these outreaches
+and pray for current ministries as well as future advances to unreached
+people groups. Missions Advance also fosters connections between
+students interested in missions and ministries around the world. The
+outreaches sponsored by the Center for Global Opportunities are central
+to the student experience at BJU. Participating students apply spiritual
+truths as they serve others---whether locally or globally.

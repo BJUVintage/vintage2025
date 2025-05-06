@@ -5,7 +5,8 @@ category: Society
 excerpt: Societies competed to attract new members with games, food, and distinctive traditions during the annual Society Rush event.
 ---
 
-# Society Rush
+# **Society Rush**
+
 
 On September 13, the "Biggest Block Party of the Year" commenced with
 societies competing for the attention and affection of the incoming

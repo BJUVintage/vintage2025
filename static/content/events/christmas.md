@@ -4,6 +4,18 @@ date: 2024-2025 Academic Year
 excerpt: The annual Christmas celebration brought warmth and joy to the campus community before the winter break. The festivities began with the traditional...
 ---
 
-# Christmas Celebration
+# Christmas
 
-The annual Christmas celebration brought warmth and joy to the campus community before the winter break. The festivities began with the traditional Christmas tree lighting ceremony on the quad, where hundreds of students gathered for carols, hot chocolate, and the official illumination of the 30-foot evergreen. The Music Department's Christmas concert series featured performances by the Concert Choir, Handbell Choir, and Symphony Orchestra, culminating in the beloved Candlelight Service in the University Chapel. Residence halls competed in a festive decorating contest, with Johnson Hall's interactive "Journey to Bethlehem" experience winning top honors. The annual Vespers service provided a reflective conclusion to the semester, while the President's Christmas Reception welcomed faculty, staff, and their families for fellowship before the holiday break. Student organizations coordinated several charitable initiatives, including the Angel Tree gift drive and the community food bank collection, embodying the season's spirit of giving.
+
+In December BJU celebrated its 35th Christmas lighting ceremony. A
+Christmas village provided free family activities, including cookie
+decorating, storytelling, games, and crafts. The University invited food
+trucks and sponsored s'mores stations, while the Christmas
+Market---featuring BJU students, faculty, staff, and alumni---offered a
+local collection of handcrafted jewelry, baked goods, and art. Caroling,
+hosted by the University Singers, was the central event of the evening
+with hundreds of flickering candles signifying the event's popularity.
+During "O Holy Night," a magical array of lights exploded across campus.
+The evening festivities concluded with "Carols & Classics," a holiday
+program featuring the Symphonic Wind Band, Lyric Choir, Bob Jones
+Academy Elementary Advanced Choir, and Greenville County Youth Chorale.

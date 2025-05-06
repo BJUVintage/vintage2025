@@ -4,7 +4,8 @@ advisor: Student Life Office
 excerpt: The eleven-member Student Leadership Council plans campus events, acts as a liaison with administration, and promotes the annual spiritual theme.
 ---
 
-# Student Leadership Council
+# **Student Leadership Council**
+
 
 The Student Leadership Council (SLC), which consists of eleven officers
 nominated by fellow students, plans and promotes student body events.

@@ -4,6 +4,37 @@ date: 2024-2025 Academic Year
 excerpt: The University community celebrated a historic milestone with the inauguration of Dr. Rebecca Martinez as the institution's 15th president. The formal...
 ---
 
-# New President Inauguration
+# **New President**
 
-The University community celebrated a historic milestone with the inauguration of Dr. Rebecca Martinez as the institution's 15th president. The formal ceremony took place in October with delegates from over 100 colleges and universities in attendance, alongside trustees, faculty, students, alumni, and community leaders. Dr. Martinez, previously the provost at a prestigious northeastern university, was selected after an extensive national search. Her inaugural address, "Honoring Tradition, Embracing Tomorrow," articulated a vision that respects the University's 125-year heritage while positioning it for future challenges in higher education. The weeklong celebration included academic symposia, student performances, community service projects, and a campus-wide inaugural reception. Dr. Martinez has already begun implementing key initiatives focused on academic excellence, student success, and community partnerships. As the first woman and first Hispanic person to lead the University, her appointment represents a significant moment in the institution's commitment to diversity and inclusion. The campus community has responded enthusiastically to her accessible leadership style and clear strategic direction during her first year in office.
+
+In May 2024, Dr. Josh Crockett became BJU's sixth president. Prior to
+being elected, he served as the senior pastor of Grace Baptist Church
+and head of Indiana Christian Academy in Anderson, Indiana. In that
+role, Dr. Crockett shepherded the school through the 2008 recession,
+gained accreditation, and oversaw significant growth in both ministries.
+From 2015-2024, he served as senior pastor of Morningside Baptist Church
+(Greenville), where he led a multigenerational, multiethnic, and
+multicultural congregation that included hundreds of BJU students,
+faculty, and staff. As a BJU alumnus and with such a large BJU
+contingency at church, Dr. Crockett announced his initial goals as
+supporting faculty and staff, increasing enrollment, continuing the
+emphasis on a biblical worldview, and formulating a strategic plan for
+the University.
+
+Chapel remains Dr. Crockett's top priority for students, his intention
+to engage students with the message of God's Work and penetrate their
+hearts with the Gospel. He not only exegetes the text of Scripture but
+also challenges hearers with its application. Additionally, he provides
+experiential learning opportunities through student involvement in
+music. Recognizing the value of a liberal arts education, Dr. Crockett
+extends the University's range of academic pursuits in chapel. Once each
+month, students meet with their academic schools or divisions to learn
+how their studies can develop the mind of Christ within them and
+contribute to their sanctification.
+
+Dr. Crockett's previous pastoral ministry informs his leadership style
+and goals. Since our post-Christian culture has rendered ministry more
+and more challenging, he strives for unity within diversity. As the
+University family gathers to worship together, it becomes, he believes,
+better equipped to minister to more people and to foster growth within
+believers.

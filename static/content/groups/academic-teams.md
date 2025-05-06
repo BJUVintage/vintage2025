@@ -4,7 +4,7 @@ advisor: Various Faculty Advisors
 excerpt: Teams in robotics, biology, government, and computer programming develop skills through collaboration and state/national competitions.
 ---
 
-# Academic Teams
+# **Academic Teams**
 
 Academic teams in robotics, biology, government, and computer
 programming develop innovative skills and enter competitive events and

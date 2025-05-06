@@ -6,4 +6,20 @@ excerpt: The 125th Commencement ceremony marked a momentous occasion as 487 grad
 
 # Commencement
 
-The 125th Commencement ceremony marked a momentous occasion as 487 graduates received their degrees on a perfect spring morning. The campus quad was transformed into an outdoor auditorium with the historic Administration Building providing a dignified backdrop for the proceedings. Distinguished alumnus and international humanitarian Dr. James Rollins delivered an inspiring commencement address on "Building Bridges in a Divided World," challenging graduates to use their education as a foundation for positive change. Special recognition was given to Dr. Eleanor Whitfield, retiring after 42 years of service to the University's English Department. The ceremony featured musical performances by the University Wind Ensemble and a moving rendition of the alma mater by the graduating choir members. Family and friends from across the nation and 14 different countries attended the celebration, with a live-stream enabling thousands more to participate virtually. The weekend's festivities also included the Baccalaureate service, departmental recognition ceremonies, and the President's Reception for graduates and their families.
+
+Commencement is a time of celebration and reflection for graduates and
+their families. On May 9, hundreds of graduates cheered, laughed, and
+congratulated one another on their achievement. They reminisced about
+freshmen insecurities and sophomore checks; they celebrated with friends
+and faculty who had challenged them to grow both academically and
+spiritually for the previous four years; they testified of God\'s
+faithfulness and thanked family members for their support.
+
+Commencement, however, is also a time of anticipation. Whether entering
+graduate school or a career, graduates would soon experience another
+phase of learning, not only with enhanced practical skills but also with
+stronger character and faith. Their college experience prepared them for
+the next chapter of their lives, and they rise to meet that next life
+story with zeal. With a sense of the world\'s need and a confidence in
+God\'s sovereignty, the class of 2025 left campus to fulfill their
+calling.

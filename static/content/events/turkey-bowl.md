@@ -7,6 +7,7 @@ excerpt: The 2024 Turkey Bowl featured an intramural soccer match between the Si
 
 # Turkey Bowl
 
+
 The 2024 Turkey Bowl featured an intramural soccer match between the
 Sigma Alpha Chi Spartans and the Pi Gamma Delta Royals. The hard-fought
 game demonstrated skill and sportsmanship with the Royals winning the

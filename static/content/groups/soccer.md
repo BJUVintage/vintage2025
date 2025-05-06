@@ -6,4 +6,18 @@ excerpt: Our soccer program combines athletic excellence with character developm
 
 # Soccer
 
-Our soccer program combines athletic excellence with character development as players compete at the highest collegiate levels. Both men's and women's teams maintain rigorous training schedules while balancing academic responsibilities throughout their fall season and off-season conditioning. Beyond developing technical skills and tactical understanding, players build lifelong friendships through shared challenges and victories. The program emphasizes sportsmanship, teamwork, and servant leadership both on the field and in the broader campus community.
+
+The Bruins men's soccer team captured the 2024 NCCAA DII National
+Championship, defeating Boyce College 5-1 in the title match and closing
+out the season with an impressive 17-2-2 record. Mario Figueroa was
+named the NCCAA National Player of the Year, while Matthias Baladi,
+Cameron Braswell, Mario Figueroa, and Jake Provenzano earned
+All-American honors. The NCCAA recognized Head Coach Greg Fulton as
+National Coach of the Year.
+
+The Bruins women's soccer team also had a successful season, securing
+the NCCAA National Championship with a 5-0 win over Great Lakes
+Christian College. Mia Marks was honored as NCCAA National Player of the
+Year, and Celeste Baladi, Margaret Cummings, Mia Marks, and Jessica
+Townsend earned All-American recognition. The NCCAA recognized Head
+Coach Dr. Chris Carmichael as National Coach of the Year.

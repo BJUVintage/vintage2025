@@ -6,6 +6,7 @@ excerpt: Five diverse choral groups provide students with opportunities to showc
 
 # Choral Groups
 
+
 Five choral groups offer students on every level of musicianship an
 opportunity to showcase talent for God's glory. These groups include the
 University Singers, Concert Choir, Chorale, Lyric Choir, and Men's Glee

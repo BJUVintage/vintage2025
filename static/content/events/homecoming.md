@@ -4,6 +4,19 @@ date: 2024-2025 Academic Year
 excerpt: Homecoming 2024 brought generations of alumni back to campus for a weekend of celebration, reconnection, and school spirit. Under the theme "Legacy...
 ---
 
-# Homecoming
+# **Alumni/Homecoming**
 
-Homecoming 2024 brought generations of alumni back to campus for a weekend of celebration, reconnection, and school spirit. Under the theme "Legacy of Excellence," the weekend honored both the institution's heritage and its future vision. Friday's activities began with the Alumni Chapel, featuring special recognition of the 50-year reunion class of 1974. The traditional Homecoming parade through campus showcased creative floats from student organizations, with the Education Club winning the President's Trophy for their interactive "Classroom Through the Decades" entry. Saturday's tailgate drew over 3,000 alumni, students, and families before the football team secured a thrilling 28-24 victory against their archrivals. The Homecoming Court was presented at halftime, with seniors Michael Chen and Olivia Washington crowned as king and queen. Evening festivities included the Alumni Banquet, where Distinguished Alumni Awards were presented to five graduates for their professional achievements and service. Class reunions, academic department open houses, and a special concert by the University's musical ensembles rounded out the weekend, creating lasting memories while strengthening institutional pride.
+
+During its annual Homecoming in October, Bob Jones University celebrates
+42,000 living alumni. This weekend encourages graduates, an integral
+part of the University family, to greet old friends, make new ones, and
+create lasting memories. The special weekend includes the Museum &
+Gallery's Makers Market, an alumni dinner and BBQ Bash, and a Homecoming
+concert featuring the Symphonic Wind Band, Chorale, and University
+Symphony Orchestra. Each year, Homecoming sponsors class reunions and
+grants recognition awards in celebration of the faithfulness and
+diligence of alumni. By highlighting the outstanding achievements of
+graduates, Homecoming weekend inspires current students to recognize the
+significance of their current academic endeavors, anticipate using their
+God-given gifts in future vocation, and await with enthusiasm their
+joining an expanding alumni community.

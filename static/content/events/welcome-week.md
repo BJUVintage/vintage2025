@@ -4,6 +4,18 @@ date: 2024-2025 Academic Year
 excerpt: Welcome Week 2024 kicked off the academic year with an energetic series of events designed to integrate new students while reuniting returning students...
 ---
 
-# Welcome Week
+# **Welcome Week**
 
-Welcome Week 2024 kicked off the academic year with an energetic series of events designed to integrate new students while reuniting returning students after the summer break. The expanded seven-day program began with Move-In Day, where athletic teams and student organizations assisted freshmen and their families with the transition to campus living. The traditional New Student Convocation formally welcomed the Class of 2028 into the academic community, with the President's address emphasizing the transformative power of a liberal arts education in today's world. Academic orientation sessions introduced students to their chosen fields of study and connected them with faculty mentors. Evening activities included the Campus Organization Fair, Freshman Talent Show, and the popular "Glow Night" on the quad. Service Day engaged over 800 students in community projects throughout the surrounding area. The week culminated with the All-Campus Picnic and outdoor concert featuring an alumnus who has gained national recognition as a singer-songwriter. Student feedback indicated that this year's Welcome Week successfully built community connections while preparing new students for the academic challenges ahead.
+
+Welcome Week introduced the Class of 2028 to campus life. With wide eyes
+and smiles, many in the first-year class began the college experience by
+moving into residence halls. The Welcome Week theme---OWN
+IT---encouraged students to glorify God by accepting personal
+responsibility for their studies, relationships, and spiritual growth.
+The week sponsored "meet and greet" sessions for academic majors,
+orientation for new students, special sessions for international
+students, and a presidential welcome to kick off the semester. Students
+participated in auditions and placements tests as they prepared for the
+academic year. Opening exercises and evangelistic meetings established a
+strong foundation for a successful year by challenging and uplifting all
+students as they returned to campus.

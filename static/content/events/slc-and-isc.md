@@ -5,9 +5,8 @@ category: Society
 excerpt: The Inter-Society Council (ISC) is comprised of student leaders on campus who serve as society presidents, vice-presidents, and chaplains. These students have the opportunity...
 ---
 
-# SLC and ISC
+# **Student Leadership Council**
 
-**Student Leadership Council**
 
 **Inter-Society Executive Council**
 

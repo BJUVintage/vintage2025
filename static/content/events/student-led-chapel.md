@@ -4,6 +4,16 @@ date: 2024-2025 Academic Year
 excerpt: Student-led chapel services emerged as a highlight of campus spiritual life this year, with designated Fridays reserved for worship experiences designed...
 ---
 
-# Student-Led Chapel Services
+# **Student-Led Chapel**
 
-Student-led chapel services emerged as a highlight of campus spiritual life this year, with designated Fridays reserved for worship experiences designed and facilitated entirely by students. The Student Spiritual Life Committee, comprising representatives from various campus ministries and academic departments, coordinated these services with mentorship from the Campus Ministry Office. Each month featured a different student organization or residence hall as the coordinating group, resulting in diverse expressions of worship that reflected the breadth of spiritual traditions within the campus community. Particularly memorable services included the International Students Association's global worship experience featuring songs in multiple languages, the Theatre Department's powerful dramatization of biblical narratives, and the Athletic Department's emphasis on faith and sportsmanship. Student testimonies became a central feature, with many sharing personal stories of faith development during their college years. Attendance at these student-led services consistently exceeded that of regular chapel, demonstrating the appeal of peer-led spiritual formation. Faculty and staff regularly commented on the thoughtfulness, creativity, and spiritual depth demonstrated by student leaders through these worship experiences.
+
+Student-led chapels provide students with the opportunity to share
+personal testimonies and lead in worship. The men's student body
+president or a seminary student delivers a challenge to the student body
+and faculty. Held twice each semester, student-led chapels function
+similarly to regular chapel services except students lead each aspect of
+the chapel. These meetings provide a valuable time of reflection and
+encouragement for the student body. This year's spiritual theme,
+"Abundant Life," focused on the joy, peace, and purpose believers find
+when they develop a relationship with God the Father through His Son,
+Jesus Christ.

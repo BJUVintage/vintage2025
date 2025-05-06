@@ -4,6 +4,26 @@ advisor: Faculty Advisor
 excerpt: Our practicum and internship programs bridge classroom learning with real-world application, providing students with invaluable professional...
 ---
 
-# Practicums and Internships
+# **Practicums and Internships**
 
-Our practicum and internship programs bridge classroom learning with real-world application, providing students with invaluable professional experience across numerous fields. Through carefully cultivated partnerships with businesses, nonprofits, schools, and healthcare facilities, students gain hands-on experience, professional mentorship, and networking opportunities while earning academic credit. These experiences frequently lead to job offers and provide students with portfolio materials, industry connections, and practical skills that distinguish them in competitive job markets.
+
+Practicums and internships enable students to gain experience in their
+target career before graduation. Under the supervision and mentorship of
+a practicing professional, students benefit from on-the-job training in
+ways that are challenging to convey in a traditional classroom setting.
+Through these learning opportunities, students connect with local
+businesses, engage with people having similar interests, and enhance
+their resumes. This year, students worked in various positions at
+restaurants, hospitals, law firms, and nonprofit organizations. Student
+internships on campus include finance, marketing, public relations, and
+editing for BJU Press.  
+
+Experiential learning courses (EXPs) also enhance educational programs.
+Experiential learning is an engaged process for students to "learn by
+doing." These courses, integrating hands-on application with traditional
+course content, demand a substantial investment of time, intellectual
+rigor, and structured reflection. EXPs include internships,
+problem-based learning, practicums, study abroad, research projects,
+studio performances, and service learning. EXPs, powerful tools of the
+student experience, deepen in-class comprehension and enhance career
+readiness for life after college.

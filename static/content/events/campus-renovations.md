@@ -4,6 +4,18 @@ date: 2024-2025 Academic Year
 excerpt: The 2024-2025 academic year marked a significant period of transformation for our campus with multiple renovation projects enhancing both facilities...
 ---
 
-# Campus Renovations
+# **Campus Renovations**
 
-The 2024-2025 academic year marked a significant period of transformation for our campus with multiple renovation projects enhancing both facilities and student experience. The Science Center underwent a comprehensive renovation, including upgraded research laboratories, collaborative workspace areas, and state-of-the-art multimedia classrooms. The historic Memorial Hall received much-needed updates to preserve its architectural integrity while improving accessibility and energy efficiency. The first phase of a multi-year residence hall revitalization plan was completed, with three dormitories receiving modern amenities while maintaining their classic charm. Outdoor spaces were also enhanced with the creation of the Centennial Plaza, a gathering space featuring native plants, sustainable water features, and outdoor study areas. These improvements not only modernized our physical campus but reinforced our commitment to providing excellent facilities that support our academic mission.
+
+With the generous support of donors, the School of Business completed a
+renovation on the second floor of the Alumni Building. The purpose of
+this renovation is to provide updated technology and collaborative space
+to business students. Features of the renovation include a
+state-of-the-art stock ticker, a business lab, and an upgraded
+conference room. In this modernized meeting space, business students can
+learn from and collaborate with professionals from around the world
+through a technologically advanced video conference system. The world
+time wall is a prominent feature of the business lab, and a video wall
+in the conference room features the accomplishments of alumni from the
+BJU School of Business. This new space better equips business students
+to serve the Lord as they prepare for future vocations.

@@ -6,4 +6,26 @@ excerpt: Throughout the academic year, the Art Department hosted a series of exh
 
 # Art Exhibitions
 
-Throughout the academic year, the Art Department hosted a series of exhibitions featuring student work across various mediums, from traditional painting and sculpture to digital art and mixed media installations. The fall semester opened with the "Fresh Perspectives" exhibition showcasing work from incoming freshman art majors. Winter featured the annual faculty exhibition alongside student works exploring themes of tradition and innovation. The spring semester culminated with the Senior Exhibition, a professional-quality showcase of graduating art majors' thesis projects that attracted visitors from across the region and received coverage in local media outlets. These exhibitions not only provided students with professional gallery experience but also created cultural enrichment opportunities for the entire campus community.
+
+Each year, Bob Jones University's art exhibitions highlight works by
+faculty, alumni, and local artists. The professional art pieces attract
+over one thousand viewers annually. This fall the BJU Division of Art +
+Design hosted several exhibitions. The Legacy Series Exhibition
+showcased retired BJU faculty member Terry Davenport, whose experience
+with camera film, darkroom photography, and cinematic productions inform
+his digital photography. Students participated in "Artist's Talk: A
+Photographer's Eye," a discussion and Q&A session with Mr. Davenport.
+"Create, Communicate, Illuminate: 50 Years of BJU Press Illustration"
+celebrated the art and artists of BJU Press and served as a testimony of
+the mission of BJU Press in Christian education. A faculty exhibition in
+November featured a variety of media, techniques, styles, and approaches
+by faculty members. Added to the exhibitions was the Apparel Design
+Collections, which highlighted capstone accomplishments by Apparel
+Design students.
+
+During the spring semester exhibitions focus on student creativity and
+professionalism. Seniors in studio art, interior architecture and
+design, and graphic design present thematic capstone projects to
+showcase their skills to both the public and potential employers. Most
+importantly, the University's art exhibitions illustrate through
+creativity the reality of God's communicable attributes.

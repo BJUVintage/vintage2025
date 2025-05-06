@@ -6,6 +6,7 @@ excerpt: The annual Bible Conference featured eight speakers addressing God's go
 
 # Bible Conference
 
+
 The 2025 Bible Conference theme, "The Goodness of God," reminded
 believers of God's unwavering faithfulness and love. Dr. Alan Benson
 opened the conference on Tuesday, February 18, setting the tone for a
@@ -21,7 +22,7 @@ uniting students in seeking God's blessing over the conference.
 This year, BJU partnered with Jonathan's House Central Africa, a
 gospel-centered ministry serving vulnerable children in the Central
 African Republic through a school, orphanage, and medical clinic. The
-University set a goal of $100,000 to fund the construction of The Alice
+University set a goal of \$100,000 to fund the construction of The Alice
 Peterson House, a home for orphaned babies, toddlers, and older girls.
 Through a record number of student-initiated fundraisers as well as
 generous donations, the BJU community united in support of this mission.

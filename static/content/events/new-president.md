@@ -1,7 +1,7 @@
 ---
 title: New President Inauguration
 date: 2024-2025 Academic Year
-excerpt: The University community celebrated a historic milestone with the inauguration of Dr. Rebecca Martinez as the institution's 15th president. The formal...
+excerpt: The University community celebrated a historic milestone with the inauguration of Dr. Josh Crockett as the institution's 6th president. The formal...
 ---
 
 # **New President**

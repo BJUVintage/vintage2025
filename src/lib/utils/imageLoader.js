@@ -27,7 +27,14 @@ const GROUP_IMAGES = {
   'discipleship-groups': ['20211106-discipleship-groups-tl1.jpg', '20211106-discipleship-groups-tl14.jpg', '20241107-discipleship-groups-sr1.jpg', '20241107-discipleship-groups-sr4.jpg', '20241107-discipleship-groups-sr7.jpg', '20241107-discipleship-groups-sr8.jpg'],
   'golf': ['20240612golf-jrcamp-wk017.jpg', '20240613golf-jrcamp-tn064.jpg'],
   'instrumental-groups': ['20241012homecoming-de124.jpg', '20241012homecoming-de139.jpg', '20241012homecoming-de142.jpg', '20241012homecoming-de149.jpg', '20241206christmas-celebration-de103.jpg'],
-  'mission-teams': ['01.jpg', 'IMG_1628.jpg', 'IMG_2237.jpg', 'IMG_2351.jpg', 'IMG_2366.jpg', 'IMG_2571.jpg']
+  'mission-teams': ['01.jpg', 'IMG_1628.jpg', 'IMG_2237.jpg', 'IMG_2351.jpg', 'IMG_2366.jpg', 'IMG_2571.jpg'],
+  // Add missing groups
+  'practicums-and-internships': ['20241026-Internship-SR1.jpg'],
+  'research-teams': ['01.jpg', '20230928exp-expo-an022.jpg', '20240404scsl-ps237.jpg', '20240619cancer-rsrch-tn016.jpg'],
+  'seminary': ['20211114-seminary-tl1.jpg', '20211114-seminary-tl2.jpg', '20241113seminarychap-aw02.jpg', '20241113seminarychap-aw03.jpg', '20241113seminarychap-aw04.jpg', '20241113seminarychap-aw10.jpg'],
+  'soccer': ['20240819msoc-team-hc005.jpg', '20240819wsoc-team-hc006.jpg', '20240928msoc-vs-pcc-de14.jpg', '20240928msoc-vs-pcc-de48.jpg', '20240928msoc-vs-pcc-de83.jpg', '20241012homecoming-de198.jpg', '20241012homecoming-de212.jpg', '20241012homecoming-de228.jpg'],
+  'study-abroad': ['StudyAbroad_1.jpg', 'StudyAbroad_2.jpg', 'StudyAbroad_3.jpg', 'StudyAbroad_4.jpg', 'StudyAbroad_5.jpg'],
+  'volleyball': ['20241016wvball-vs-piedmont-de02.jpg', '20241016wvball-vs-piedmont-de08.jpg', '20241016wvball-vs-piedmont-de14.jpg', '20241016wvball-vs-piedmont-de31.jpg', '20241016wvball-vs-piedmont-de45.jpg', '20241016wvball-vs-piedmont-de55.jpg']
 };
 
 /**

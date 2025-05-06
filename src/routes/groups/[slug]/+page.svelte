@@ -18,6 +18,7 @@
       
       // Load group images
       images = await getGroupImages(slug);
+      console.log(`[DEBUG] Loaded images for ${slug}:`, images);
     } catch (error) {
       console.error(`Error loading group ${slug}:`, error);
     } finally {

@@ -1,7 +1,6 @@
 ---
 title: Literary Society Annual Gala
 date: April 15, 2025
-category: Society
 excerpt: The Literary Society hosted its annual gala celebrating student achievements in creative writing and literary analysis.
 ---
 

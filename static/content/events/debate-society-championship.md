@@ -1,7 +1,6 @@
 ---
 title: Debate Society Championship
 date: March 8, 2025
-category: Society
 excerpt: The Debate Society hosted its annual championship tournament featuring intense competition on pressing contemporary issues.
 ---
 

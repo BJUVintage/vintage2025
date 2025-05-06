@@ -9,13 +9,29 @@ import path from 'path';
  */
 export async function GET() {
   try {
-    // Return a fixed list of group slugs for testing
+    // Return a comprehensive list of group slugs
     return json([
-      'basketball-teams',
-      'baseball-team',
-      'choral-ensembles',
-      'academic-teams',
-      'student-leadership-council'
+      "academic-teams",
+      "baseball-team",
+      "basketball-teams",
+      "campus-media",
+      "choral-ensembles",
+      "cross-country",
+      "csc-cgo",
+      "debate-society",
+      "discipleship-groups",
+      "golf",
+      "instrumental-groups",
+      "literary-society",
+      "missions-advance",
+      "mission-teams",
+      "practicums-and-internships",
+      "research-teams",
+      "seminary",
+      "soccer",
+      "student-leadership-council",
+      "study-abroad",
+      "volleyball"
     ]);
   } catch (error) {
     console.error('Error loading groups:', error);

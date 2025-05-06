@@ -9,12 +9,30 @@ import path from 'path';
  */
 export async function GET() {
   try {
-    // Return a fixed list of event slugs for testing
+    // Return a comprehensive list of event slugs
     return json([
-      'society-rush',
-      'bible-conference',
-      'harvest-festival',
-      'inter-society-council'
+      "art-exhibitions",
+      "artist-series",
+      "bible-conference",
+      "campus-renovations",
+      "chapel",
+      "christmas",
+      "commencement",
+      "debate-society-championship",
+      "evangelistic-services",
+      "fall-fest",
+      "harvest-festival",
+      "homecoming",
+      "hurricane-helene",
+      "inter-society-council",
+      "literary-society-gala",
+      "new-president",
+      "slc-and-isc",
+      "society-rush",
+      "student-led-chapel",
+      "theater",
+      "turkey-bowl",
+      "welcome-week"
     ]);
   } catch (error) {
     console.error('Error loading events:', error);

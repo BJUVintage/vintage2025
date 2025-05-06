@@ -63,6 +63,7 @@
 </svelte:head>
 
 <section class="hero">
+  <div class="university-name">BOB JONES UNIVERSITY</div>
   <div class="hero-content">
     <div class="vintage-title sparkle">VINTAGE</div>
     <div class="year-text">2025</div>
@@ -143,7 +144,15 @@
     min-height: 70vh;
   }
   
-  /* University name removed as requested */
+  .university-name {
+    color: #8ca5d9; /* Light blue */
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 2;
+  }
   
   .hero-content {
     position: relative;
@@ -299,7 +308,9 @@
       letter-spacing: 0.25rem;
     }
     
-    /* University name removed as requested */
+    .university-name {
+      font-size: 1.2rem;
+    }
     
     .year-text {
       font-size: 2rem;

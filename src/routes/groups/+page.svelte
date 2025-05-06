@@ -7,10 +7,22 @@
   let groups = [];
   let loading = true;
   
+  // Helper function to sort groups by name (since they don't have dates)
+  function sortGroupsByName(groups) {
+    return [...groups].sort((a, b) => {
+      const titleA = a.metadata?.title || '';
+      const titleB = b.metadata?.title || '';
+      return titleA.localeCompare(titleB);
+    });
+  }
+  
   onMount(async () => {
     try {
       // Load all groups
       groups = await loadAllGroups();
+      
+      // Sort groups alphabetically by title
+      groups = sortGroupsByName(groups);
       
       // Add thumbnail images
       for (let group of groups) {
@@ -29,8 +41,10 @@
 </svelte:head>
 
 <section class="groups-page">
-  <h1>Groups</h1>
-  <p>Discover the diverse student organizations that enriched campus life during the 2024-2025 academic year.</p>
+  <div class="page-header">
+    <h1>Groups</h1>
+    <p>Discover the diverse student organizations that enriched campus life during the 2024-2025 academic year.</p>
+  </div>
   
   {#if loading}
     <div class="loading">Loading groups...</div>
@@ -62,11 +76,20 @@
     text-align: center;
   }
 
+  .page-header {
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent dark background for better contrast */
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
   p {
     font-size: 1.2rem;
-    color: #444;
-    margin-bottom: 2rem;
+    color: #e6e6e6; /* Light gray/white for better contrast */
+    margin-bottom: 1rem;
     text-align: center;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); /* Add subtle shadow for better readability */
   }
 
   .groups-grid {

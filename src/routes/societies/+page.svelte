@@ -51,7 +51,6 @@
       // Create a custom order for society events based on logical academic year flow
       const customSocietyOrder = [
         "society-rush",           // Beginning of year society event
-        "slc-and-isc",            // Student leadership related
         "turkey-bowl"             // Later in the year competition
       ];
       

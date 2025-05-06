@@ -54,13 +54,18 @@ export async function getThumbnailImage(type, slug) {
       : await getGroupImages(slug);
     
     if (images && images.length > 0) {
+      // For placeholder.jpg, use the placeholder image we created
+      if (images[0] === 'placeholder.jpg') {
+        return `/images/${type}/placeholder/placeholder.jpg`;
+      }
       return `/images/${type}/${slug}/${images[0]}`;
     }
     
-    // Return default image if no images found
-    return '/images/cover/default-thumbnail.jpg';
+    // Return fallback to cover image when no specific images found
+    return '/images/cover/cover-full.jpg';
   } catch (error) {
     console.error(`Error getting thumbnail for ${type}/${slug}:`, error);
-    return '/images/cover/default-thumbnail.jpg';
+    // Use cover image as fallback
+    return '/images/cover/cover-full.jpg';
   }
 }

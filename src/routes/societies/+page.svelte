@@ -49,6 +49,7 @@
           slug={event.slug} 
           imagePath={event.imagePath}
           excerpt={event.metadata.excerpt || 'Learn more about this society event...'}
+          category="Society"
         />
       {/each}
     </div>

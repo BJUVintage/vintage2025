@@ -40,27 +40,29 @@
   </div>
 {:else}
   <article class="group-page">
-    <header>
-      <h1>{group.metadata.title}</h1>
-      {#if group.metadata.advisor}
-        <div class="group-advisor">Advisor: {group.metadata.advisor}</div>
+    <div class="group-card">
+      <header>
+        <h1>{group.metadata.title}</h1>
+        {#if group.metadata.advisor}
+          <div class="group-advisor">Advisor: {group.metadata.advisor}</div>
+        {/if}
+      </header>
+      
+      <div class="group-content">
+        <!-- Group content from markdown -->
+        {@html group.content}
+      </div>
+      
+      {#if images.length > 0}
+        <section class="group-photos">
+          <h2>Photo Gallery</h2>
+          <PhotoGallery 
+            images={images}
+            baseDir={`/images/groups/${slug}`}
+          />
+        </section>
       {/if}
-    </header>
-    
-    <div class="group-content">
-      <!-- Group content from markdown -->
-      {@html group.content}
     </div>
-    
-    {#if images.length > 0}
-      <section class="group-photos">
-        <h2>Photo Gallery</h2>
-        <PhotoGallery 
-          images={images}
-          baseDir={`/images/groups/${slug}`}
-        />
-      </section>
-    {/if}
   </article>
 {/if}
 
@@ -69,10 +71,31 @@
     max-width: 800px;
     margin: 0 auto;
   }
+  
+  .group-card {
+    display: block;
+    background: linear-gradient(to bottom, #ffffff, #f8f8f8);
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .group-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #001142, #8ca5d9);
+  }
 
   header {
     margin-bottom: 2rem;
-    border-bottom: 2px solid #ffcc00; /* Gold from yearbook cover */
+    border-bottom: 2px solid #e6b93d; /* Gold from yearbook cover */
     padding-bottom: 1rem;
   }
 

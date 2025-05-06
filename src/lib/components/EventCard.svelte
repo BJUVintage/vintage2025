@@ -3,9 +3,10 @@
   export let slug;
   export let imagePath;
   export let excerpt;
+  export let category = null;
 </script>
 
-<a href={`/events/${slug}`} class="event-card">
+<a href={category === 'Society' ? `/societies/${slug}` : `/events/${slug}`} class="event-card">
   <div class="card-image">
     <img src={imagePath} alt={title} />
   </div>

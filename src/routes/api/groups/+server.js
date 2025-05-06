@@ -9,16 +9,14 @@ import path from 'path';
  */
 export async function GET() {
   try {
-    // In a production environment, you would read from your content directory
-    const groupsDir = path.join(process.cwd(), 'content', 'groups');
-    const files = fs.readdirSync(groupsDir);
-    
-    // Extract slugs (remove file extensions)
-    const groupSlugs = files
-      .filter(file => file.endsWith('.md'))
-      .map(file => file.replace('.md', ''));
-    
-    return json(groupSlugs);
+    // Return a fixed list of group slugs for testing
+    return json([
+      'basketball-teams',
+      'baseball-team',
+      'choral-ensembles',
+      'academic-teams',
+      'student-leadership-council'
+    ]);
   } catch (error) {
     console.error('Error loading groups:', error);
     return json([], { status: 500 });

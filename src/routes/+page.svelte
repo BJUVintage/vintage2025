@@ -23,12 +23,20 @@
         event.metadata && event.metadata.category === 'Society'
       );
       
-      // Take the first 3 events, societies, and groups for the homepage
-      featuredEvents = events
-        .filter(event => !event.metadata || event.metadata.category !== 'Society')
-        .slice(0, 3);
-      featuredSocieties = societyEvents.slice(0, 3);
-      featuredGroups = groups.slice(0, 3);
+      // Function to randomly select n items from an array
+      function getRandomItems(array, n) {
+        const shuffled = [...array].sort(() => 0.5 - Math.random());
+        return shuffled.slice(0, n);
+      }
+      
+      // Randomly select 3 items for each category
+      const nonSocietyEvents = events.filter(event => 
+        !event.metadata || event.metadata.category !== 'Society'
+      );
+      
+      featuredEvents = getRandomItems(nonSocietyEvents, 3);
+      featuredSocieties = getRandomItems(societyEvents, 3);
+      featuredGroups = getRandomItems(groups, 3);
       
       // Add thumbnail images
       for (let event of featuredEvents) {
@@ -55,7 +63,6 @@
 </svelte:head>
 
 <section class="hero">
-  <div class="university-name">BOB JONES UNIVERSITY</div>
   <div class="hero-content">
     <div class="vintage-title sparkle">VINTAGE</div>
     <div class="year-text">2025</div>
@@ -91,6 +98,7 @@
           slug={society.slug} 
           imagePath={society.imagePath}
           excerpt={society.metadata.excerpt || 'Learn more about this society event...'}
+          category="Society"
         />
       {/each}
     </div>
@@ -135,15 +143,7 @@
     min-height: 70vh;
   }
   
-  .university-name {
-    color: #8ca5d9; /* Light blue */
-    font-size: 1.5rem;
-    letter-spacing: 0.3rem;
-    font-style: italic;
-    margin-bottom: 1.5rem;
-    position: relative;
-    z-index: 2;
-  }
+  /* University name removed as requested */
   
   .hero-content {
     position: relative;
@@ -299,9 +299,7 @@
       letter-spacing: 0.25rem;
     }
     
-    .university-name {
-      font-size: 1.2rem;
-    }
+    /* University name removed as requested */
     
     .year-text {
       font-size: 2rem;

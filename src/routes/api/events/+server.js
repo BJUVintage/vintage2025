@@ -9,21 +9,15 @@ import path from 'path';
  */
 export async function GET() {
   try {
-    // In a production environment, you would read from your content directory
-    // For this example, we're simulating reading from the file system
-    const eventsDir = path.join(process.cwd(), 'content', 'events');
-    const files = fs.readdirSync(eventsDir);
-    
-    // Extract slugs (remove file extensions)
-    const eventSlugs = files
-      .filter(file => file.endsWith('.md'))
-      .map(file => file.replace('.md', ''));
-    
-    return json(eventSlugs);
+    // Return a fixed list of event slugs for testing
+    return json([
+      'society-rush',
+      'bible-conference',
+      'harvest-festival',
+      'inter-society-council'
+    ]);
   } catch (error) {
     console.error('Error loading events:', error);
     return json([], { status: 500 });
   }
 }
-
-

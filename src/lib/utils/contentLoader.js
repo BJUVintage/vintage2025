@@ -13,11 +13,12 @@ import { marked } from 'marked';
  */
 export async function loadEventContent(slug) {
   try {
-    // In a real app, this would be a fetch to your API or direct file read
-    // For this example, we're simulating dynamic imports
+    // In SvelteKit, static files are served from the root path
+    // so we don't need /static/ in the path
     const response = await fetch(`/content/events/${slug}.md`);
     
     if (!response.ok) {
+      console.warn(`Failed to load event content for ${slug}. Status: ${response.status}`);
       throw new Error(`Failed to load event content for ${slug}`);
     }
     
@@ -39,6 +40,7 @@ export async function loadGroupContent(slug) {
     const response = await fetch(`/content/groups/${slug}.md`);
     
     if (!response.ok) {
+      console.warn(`Failed to load group content for ${slug}. Status: ${response.status}`);
       throw new Error(`Failed to load group content for ${slug}`);
     }
     

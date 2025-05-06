@@ -50,29 +50,31 @@
       <a href="/societies">Back to Societies</a>
     </div>
   {:else}
-    <div class="event-header">
-      <h1>{eventData.metadata.title}</h1>
-      <div class="event-meta">
-        <span class="event-date">{eventData.metadata.date}</span>
+    <div class="society-card">
+      <div class="event-header">
+        <h1>{eventData.metadata.title}</h1>
+        <div class="event-meta">
+          <span class="event-date">{eventData.metadata.date}</span>
+        </div>
       </div>
-    </div>
-    
-    <div class="event-content">
-      {@html eventData.content}
-    </div>
-    
-    {#if images.length > 0}
-      <div class="event-gallery">
-        <h2>Photo Gallery</h2>
-        <PhotoGallery 
-          images={images.map(img => `/images/events/${slug}/${img}`)} 
-          captions={images.map(img => img.split('.')[0].replace(/-/g, ' '))}
-        />
+      
+      <div class="event-content">
+        {@html eventData.content}
       </div>
-    {/if}
-    
-    <div class="back-link">
-      <a href="/societies">← Back to All Societies</a>
+      
+      {#if images.length > 0}
+        <div class="event-gallery">
+          <h2>Photo Gallery</h2>
+          <PhotoGallery 
+            images={images.map(img => `/images/events/${slug}/${img}`)} 
+            captions={images.map(img => img.split('.')[0].replace(/-/g, ' '))}
+          />
+        </div>
+      {/if}
+      
+      <div class="back-link">
+        <a href="/societies">← Back to All Societies</a>
+      </div>
     </div>
   {/if}
 </section>
@@ -83,9 +85,32 @@
     margin: 0 auto;
   }
   
+  .society-card {
+    display: block;
+    background: linear-gradient(to bottom, #ffffff, #f8f8f8);
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .society-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #001142, #8ca5d9);
+  }
+  
   .event-header {
     margin-bottom: 2rem;
     text-align: center;
+    border-bottom: 2px solid #e6b93d; /* Gold from yearbook cover */
+    padding-bottom: 1rem;
   }
   
   h1 {

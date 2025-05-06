@@ -30,3 +30,6 @@ npm run check:watch
 - **API Routes**: Use SvelteKit's `+server.js` convention, return appropriate status codes
 - **CSS**: Component-scoped styles, flexbox layouts, custom properties for theming
 - **Content**: Markdown files with frontmatter for metadata in `static/content/`
+
+## Project Workflow
+- do not run the server. I will run the server and tell you what needs to be fixed

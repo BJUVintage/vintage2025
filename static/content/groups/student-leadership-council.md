@@ -1,6 +1,5 @@
 ---
 title: Student Leadership Council
-advisor: Student Life Office
 excerpt: The eleven-member Student Leadership Council plans campus events, acts as a liaison with administration, and promotes the annual spiritual theme.
 ---
 

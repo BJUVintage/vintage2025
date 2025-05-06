@@ -1,6 +1,5 @@
 ---
 title: Research Teams
-advisor: Faculty Advisor
 excerpt: STEM courses offer opportunities for students to apply classroom skills in real-world scenarios. Biology, chemistry, and engineering majors...
 ---
 

@@ -66,8 +66,8 @@
         <div class="event-gallery">
           <h2>Photo Gallery</h2>
           <PhotoGallery 
-            images={images.map(img => `/images/events/${slug}/${img}`)} 
-            captions={images.map(img => img.split('.')[0].replace(/-/g, ' '))}
+            images={images}
+            baseDir={`/images/events/${slug}`}
           />
         </div>
       {/if}

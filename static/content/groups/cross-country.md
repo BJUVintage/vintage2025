@@ -1,6 +1,5 @@
 ---
 title: Cross Country
-advisor: Faculty Advisor
 excerpt: Our cross-country team embodies determination and endurance as they compete across challenging terrains throughout the season...
 ---
 

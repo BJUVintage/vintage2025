@@ -1,6 +1,5 @@
 ---
 title: Volleyball
-advisor: Faculty Advisor
 excerpt: Our volleyball program embodies excellence, teamwork, and competitive spirit as players represent our university on the court...
 ---
 

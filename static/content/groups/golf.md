@@ -1,6 +1,5 @@
 ---
 title: Golf
-advisor: Faculty Advisor
 excerpt: Our golf team combines precision, focus, and strategic thinking as they represent our university on courses throughout the region...
 ---
 

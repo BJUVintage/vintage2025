@@ -1,6 +1,5 @@
 ---
 title: Missions Advance
-advisor: Faculty Advisor
 excerpt: Missions Advance serves as our campus hub for global engagement, connecting students with opportunities to explore vocational calling through...
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: Mission Teams
-advisor: Faculty Advisor
 excerpt: Our mission teams extend our university's commitment to service beyond campus boundaries, partnering with communities locally and globally...
 ---
 

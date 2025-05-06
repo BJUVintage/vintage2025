@@ -1,6 +1,5 @@
 ---
 title: Bruins Baseball Team
-advisor: Baseball Head Coach
 excerpt: The Bruins baseball team completed their best season in program history with multiple players receiving Scholar-Athlete and All-American recognition.
 ---
 

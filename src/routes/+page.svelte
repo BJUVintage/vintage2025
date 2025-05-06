@@ -91,6 +91,23 @@
   </section>
   
   <section class="featured-section">
+    <h2>Featured Groups</h2>
+    <div class="card-grid">
+      {#each featuredGroups as group}
+        <GroupCard 
+          title={group.metadata.title} 
+          slug={group.slug} 
+          imagePath={group.imagePath}
+          excerpt={group.metadata.excerpt || 'Learn more about this group...'}
+        />
+      {/each}
+    </div>
+    <div class="view-all">
+      <a href="/groups">View All Groups</a>
+    </div>
+  </section>
+
+  <section class="featured-section">
     <h2>Featured Societies</h2>
     <div class="card-grid">
       {#each featuredSocieties as society}
@@ -105,23 +122,6 @@
     </div>
     <div class="view-all">
       <a href="/societies">View All Societies</a>
-    </div>
-  </section>
-
-  <section class="featured-section">
-    <h2>Featured Groups</h2>
-    <div class="card-grid">
-      {#each featuredGroups as group}
-        <GroupCard 
-          title={group.metadata.title} 
-          slug={group.slug} 
-          imagePath={group.imagePath}
-          excerpt={group.metadata.excerpt || 'Learn more about this group...'}
-        />
-      {/each}
-    </div>
-    <div class="view-all">
-      <a href="/groups">View All Groups</a>
     </div>
   </section>
 {/if}

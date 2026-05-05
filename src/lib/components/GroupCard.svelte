@@ -1,5 +1,7 @@
 <script>
   import { onMount } from 'svelte';
+  import { withBasePath } from '$lib/utils/paths.js';
+
   export let title;
   export let slug;
   export let imagePath;
@@ -28,9 +30,11 @@
   function handleImageLoad() {
     imageLoaded = true;
   }
+
+  $: groupHref = withBasePath(`/groups/${slug}`);
 </script>
 
-<a href={`/groups/${slug}`} class="group-card">
+<a href={groupHref} class="group-card">
   <div class="card-image">
     <img 
       src={displayImagePath} 

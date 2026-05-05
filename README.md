@@ -1,5 +1,13 @@
 # BJU Vintage 2025 - Svelte Project Structure
 
+## Deployment Base Path
+- The app supports root deployment (`/`) and any subfolder deployment (for example `/2025`).
+- To build for a subfolder, set `BASE_PATH` to the folder name:
+  ```bash
+  BASE_PATH=2025 npm run build
+  ```
+- `BASE_PATH` can be any subfolder value (with or without leading slash).
+
 ## Project Structure Overview
 ```
 vintage-2025/

@@ -4,6 +4,7 @@
   import PhotoGallery from '$lib/components/PhotoGallery.svelte';
   import { loadEventContent } from '$lib/utils/contentLoader.js';
   import { getEventImages } from '$lib/utils/imageLoader.js';
+  import { withBasePath } from '$lib/utils/paths.js';
   
   const slug = $page.params.slug;
   
@@ -36,7 +37,7 @@
   <div class="error-state">
     <h1>Event Not Found</h1>
     <p>The event you're looking for doesn't exist or couldn't be loaded.</p>
-    <a href="/events">Back to Events</a>
+    <a href={withBasePath('/events')}>Back to Events</a>
   </div>
 {:else}
   <article class="event-page">
@@ -58,7 +59,7 @@
           <h2>Photo Gallery</h2>
           <PhotoGallery 
             images={images}
-            baseDir={`/images/events/${slug}`}
+            baseDir={withBasePath(`/images/events/${slug}`)}
           />
         </section>
       {/if}
@@ -137,4 +138,3 @@
     border-radius: 4px;
   }
 </style>
-

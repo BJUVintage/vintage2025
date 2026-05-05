@@ -105,7 +105,7 @@ img {
 
 /* Below are sample content files */
 
-/* Sample content file: /content/events/welcome-week.md */
+/* Sample content file: content/events/welcome-week.md */
 /*
 ---
 title: Welcome Week 2024
@@ -128,7 +128,7 @@ The Class of 2028 was welcomed to campus during the annual Welcome Week festivit
 Welcome Week concluded with the annual First Week Revival services, setting a spiritual foundation for the academic year ahead.
 */
 
-/* Sample content file: /content/groups/robotics-team.md */
+/* Sample content file: content/groups/robotics-team.md */
 /*
 ---
 title: BJU Robotics Team
@@ -155,7 +155,7 @@ The 2024-2025 team consisted of 15 students from various majors, including Compu
 Under the guidance of faculty advisor Dr. William Hayes, the team continues to grow its capabilities and reputation in collegiate robotics competitions.
 */
 
-/* Example API Response for /api/events */
+/* Example API Response for api/events */
 /*
 [
   "welcome-week",
@@ -167,7 +167,7 @@ Under the guidance of faculty advisor Dr. William Hayes, the team continues to g
 ]
 */
 
-/* Example API Response for /api/groups */
+/* Example API Response for api/groups */
 /*
 [
   "robotics-team",
@@ -179,7 +179,7 @@ Under the guidance of faculty advisor Dr. William Hayes, the team continues to g
 ]
 */
 
-/* Example API Response for /api/images/events/welcome-week */
+/* Example API Response for api/images/events/welcome-week */
 /*
 [
   "move-in-day.jpg",

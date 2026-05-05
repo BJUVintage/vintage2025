@@ -1,5 +1,6 @@
 <script>
   import { onMount } from 'svelte';
+  import { withBasePath } from '$lib/utils/paths.js';
   
   let abramsMd = '';
   let olingerMd = '';
@@ -8,8 +9,8 @@
   onMount(async () => {
     try {
       // Load dedicatees content
-      const abramsResponse = await fetch('/content/dedications/abrams.md');
-      const olingerResponse = await fetch('/content/dedications/olinger.md');
+      const abramsResponse = await fetch(withBasePath('/content/dedications/abrams.md'));
+      const olingerResponse = await fetch(withBasePath('/content/dedications/olinger.md'));
       
       if (!abramsResponse.ok || !olingerResponse.ok) {
         throw new Error('Failed to load dedicatees content');
@@ -42,7 +43,7 @@
     <div class="honoree-cards">
       <div class="honoree-card">
         <div class="honoree-image">
-          <img src="/images/dedications/abrams.jpg" alt="Linda Abrams" />
+          <img src={withBasePath('/images/dedications/abrams.jpg')} alt="Linda Abrams" />
         </div>
         <div class="honoree-info">
           <h3>Linda Abrams</h3>
@@ -80,7 +81,7 @@
       
       <div class="honoree-card">
         <div class="honoree-image">
-          <img src="/images/dedications/olinger.jpg" alt="Dr. Dan Olinger" />
+          <img src={withBasePath('/images/dedications/olinger.jpg')} alt="Dr. Dan Olinger" />
         </div>
         <div class="honoree-info">
           <h3>Dr. Dan Olinger</h3>

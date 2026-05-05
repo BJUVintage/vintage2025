@@ -5,30 +5,17 @@
 // Import the markdown parser (you'll need to install this package)
 // npm install marked
 import { marked } from 'marked';
+import { withBasePath } from '$lib/utils/paths.js';
 
 /**
  * Load and parse an event markdown file
  * @param {string} slug - The event slug (filename without extension)
  * @returns {Object} - Parsed event data including metadata and content
  */
-/**
- * Helper to get the base URL for content
- * This ensures we use absolute paths
- */
-function getBaseUrl() {
-  // In the browser, window.location gives us the current URL
-  if (typeof window !== 'undefined') {
-    const url = new URL(window.location.href);
-    return url.origin; // e.g., "https://your-s3-bucket.amazonaws.com"
-  }
-  return ''; // During SSR, just use relative paths
-}
-
 export async function loadEventContent(slug) {
   try {
     console.log(`Loading event content for ${slug}`);
-    const baseUrl = getBaseUrl();
-    const url = `${baseUrl}/content/events/${slug}.md`;
+    const url = withBasePath(`/content/events/${slug}.md`);
     console.log(`Fetching from URL: ${url}`);
     
     // In SvelteKit, static files are served from the root path
@@ -78,8 +65,7 @@ export async function loadEventContent(slug) {
 export async function loadGroupContent(slug) {
   try {
     console.log(`Loading group content for ${slug}`);
-    const baseUrl = getBaseUrl();
-    const url = `${baseUrl}/content/groups/${slug}.md`;
+    const url = withBasePath(`/content/groups/${slug}.md`);
     console.log(`Fetching from URL: ${url}`);
     
     const response = await fetch(url);
@@ -146,11 +132,12 @@ const FALLBACK_EVENTS = [
 export async function loadAllEvents() {
   try {
     // Add more detailed logging
-    console.log('Fetching events list from /api/events');
+    const eventsApiUrl = withBasePath('/api/events');
+    console.log(`Fetching events list from ${eventsApiUrl}`);
     
     try {
       // First try API endpoint
-      const response = await fetch('/api/events');
+      const response = await fetch(eventsApiUrl);
       console.log('Events API response status:', response.status);
       
       if (response.ok) {
@@ -231,11 +218,12 @@ const FALLBACK_GROUPS = [
 export async function loadAllGroups() {
   try {
     // Add more detailed logging
-    console.log('Fetching groups list from /api/groups');
+    const groupsApiUrl = withBasePath('/api/groups');
+    console.log(`Fetching groups list from ${groupsApiUrl}`);
     
     try {
       // First try API endpoint
-      const response = await fetch('/api/groups');
+      const response = await fetch(groupsApiUrl);
       console.log('Groups API response status:', response.status);
       
       if (response.ok) {
@@ -324,4 +312,3 @@ function parseMarkdown(markdown) {
     content: htmlContent
   };
 }
-

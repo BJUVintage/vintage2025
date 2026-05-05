@@ -4,6 +4,7 @@
   import PhotoGallery from '$lib/components/PhotoGallery.svelte';
   import { loadGroupContent } from '$lib/utils/contentLoader.js';
   import { getGroupImages } from '$lib/utils/imageLoader.js';
+  import { withBasePath } from '$lib/utils/paths.js';
   
   const slug = $page.params.slug;
   
@@ -37,7 +38,7 @@
   <div class="error-state">
     <h1>Group Not Found</h1>
     <p>The group you're looking for doesn't exist or couldn't be loaded.</p>
-    <a href="/groups">Back to Groups</a>
+    <a href={withBasePath('/groups')}>Back to Groups</a>
   </div>
 {:else}
   <article class="group-page">
@@ -59,7 +60,7 @@
           <h2>Photo Gallery</h2>
           <PhotoGallery 
             images={images}
-            baseDir={`/images/groups/${slug}`}
+            baseDir={withBasePath(`/images/groups/${slug}`)}
           />
         </section>
       {/if}

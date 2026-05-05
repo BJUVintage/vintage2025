@@ -4,6 +4,7 @@
   import { loadEventContent } from '$lib/utils/contentLoader.js';
   import { getEventImages } from '$lib/utils/imageLoader.js';
   import PhotoGallery from '$lib/components/PhotoGallery.svelte';
+  import { withBasePath } from '$lib/utils/paths.js';
   
   const { slug } = $page.params;
   
@@ -47,7 +48,7 @@
     <div class="error-state">
       <h2>Event Not Found</h2>
       <p>The requested society event could not be found.</p>
-      <a href="/societies">Back to Society Events</a>
+      <a href={withBasePath('/societies')}>Back to Society Events</a>
     </div>
   {:else}
     <div class="society-card">
@@ -67,13 +68,13 @@
           <h2>Photo Gallery</h2>
           <PhotoGallery 
             images={images}
-            baseDir={`/images/events/${slug}`}
+            baseDir={withBasePath(`/images/events/${slug}`)}
           />
         </div>
       {/if}
       
       <div class="back-link">
-        <a href="/societies">← Back to All Society Events</a>
+        <a href={withBasePath('/societies')}>← Back to All Society Events</a>
       </div>
     </div>
   {/if}

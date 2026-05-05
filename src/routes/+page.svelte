@@ -5,6 +5,7 @@
   import YearbookTheme from '$lib/components/YearbookTheme.svelte';
   import { loadAllEvents, loadAllGroups } from '$lib/utils/contentLoader.js';
   import { getThumbnailImage } from '$lib/utils/imageLoader.js';
+  import { withBasePath } from '$lib/utils/paths.js';
   
   let featuredEvents = [];
   let featuredGroups = [];
@@ -86,7 +87,7 @@
       {/each}
     </div>
     <div class="view-all">
-      <a href="/events">View All Events</a>
+      <a href={withBasePath('/events')}>View All Events</a>
     </div>
   </section>
   
@@ -103,7 +104,7 @@
       {/each}
     </div>
     <div class="view-all">
-      <a href="/groups">View All Groups</a>
+      <a href={withBasePath('/groups')}>View All Groups</a>
     </div>
   </section>
 
@@ -121,7 +122,7 @@
       {/each}
     </div>
     <div class="view-all">
-      <a href="/societies">View All Society Events</a>
+      <a href={withBasePath('/societies')}>View All Society Events</a>
     </div>
   </section>
 {/if}
@@ -321,4 +322,3 @@
     }
   }
 </style>
-

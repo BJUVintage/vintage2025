@@ -1,5 +1,7 @@
 <script>
   import { onMount } from 'svelte';
+  import { withBasePath } from '$lib/utils/paths.js';
+
   export let title;
   export let slug;
   export let imagePath;
@@ -29,9 +31,11 @@
   function handleImageLoad() {
     imageLoaded = true;
   }
+
+  $: eventHref = withBasePath(category === 'Society' ? `/societies/${slug}` : `/events/${slug}`);
 </script>
 
-<a href={category === 'Society' ? `/societies/${slug}` : `/events/${slug}`} class="event-card">
+<a href={eventHref} class="event-card">
   <div class="card-image">
     <img 
       src={displayImagePath} 

@@ -1,26 +1,27 @@
 <script>
   import { page } from '$app/stores';
+  import { normalizePathname, withBasePath } from '$lib/utils/paths.js';
   
   // Navigation links
   const navLinks = [
-    { href: '/', label: 'Home' },
-    { href: '/events', label: 'Events' },
-    { href: '/groups', label: 'Groups' },
-    { href: '/societies', label: 'Society Events' },
-    { href: '/dedications', label: 'Dedications' },
-    { href: '/about', label: 'About' }
+    { path: '/', label: 'Home' },
+    { path: '/events', label: 'Events' },
+    { path: '/groups', label: 'Groups' },
+    { path: '/societies', label: 'Society Events' },
+    { path: '/dedications', label: 'Dedications' },
+    { path: '/about', label: 'About' }
   ];
 </script>
 
 <header>
   <div class="logo-container">
-    <a href="/" class="vintage-text">Vintage</a>
+    <a href={withBasePath('/')} class="vintage-text">Vintage</a>
   </div>
   <nav>
     <ul>
       {#each navLinks as link}
-        <li class={$page.url.pathname === link.href ? 'active' : ''}>
-          <a href={link.href}>{link.label}</a>
+        <li class={normalizePathname($page.url.pathname) === link.path ? 'active' : ''}>
+          <a href={withBasePath(link.path)}>{link.label}</a>
         </li>
       {/each}
     </ul>

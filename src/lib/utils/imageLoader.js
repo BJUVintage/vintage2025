@@ -1,3 +1,5 @@
+import { withBasePath } from '$lib/utils/paths.js';
+
 // Hard-coded fallback data for images
 const EVENT_IMAGES = {
   'art-exhibitions': ['20240302grd-opening-rm02.jpg', '20240302grd-opening-rm07.jpg', '20240405sa-show-rm05.jpg', '20240919class-de05.jpg', '20241210ad-opening07.jpg', '20250131iad-showopen04.jpg', '20250131iad-showopen08.jpg'],
@@ -48,8 +50,7 @@ export async function getEventImages(eventSlug) {
     
     // Try API first
     try {
-      const baseUrl = getBaseUrl();
-      const url = `${baseUrl}/api/images/events/${eventSlug}`;
+      const url = withBasePath(`/api/images/events/${eventSlug}`);
       console.log(`Fetching images from URL: ${url}`);
       
       const response = await fetch(url);
@@ -95,8 +96,7 @@ export async function getGroupImages(groupSlug) {
     
     // Try API first
     try {
-      const baseUrl = getBaseUrl();
-      const url = `${baseUrl}/api/images/groups/${groupSlug}`;
+      const url = withBasePath(`/api/images/groups/${groupSlug}`);
       console.log(`Fetching images from URL: ${url}`);
       
       const response = await fetch(url);
@@ -129,19 +129,6 @@ export async function getGroupImages(groupSlug) {
     console.error(`Error loading images for group ${groupSlug}:`, error);
     return [];
   }
-}
-
-/**
- * Helper to get the base URL for content
- * This ensures we use absolute paths
- */
-function getBaseUrl() {
-  // In the browser, window.location gives us the current URL
-  if (typeof window !== 'undefined') {
-    const url = new URL(window.location.href);
-    return url.origin; // e.g., "https://your-s3-bucket.amazonaws.com"
-  }
-  return ''; // During SSR, just use relative paths
 }
 
 /**
@@ -202,8 +189,7 @@ export async function getThumbnailImage(type, slug) {
       if (images && images.length > 0) {
         // For placeholder.jpg, use the placeholder image we created
         if (images[0] === 'placeholder.jpg') {
-          const baseUrl = getBaseUrl();
-          return `${baseUrl}/images/${type}/placeholder/placeholder.jpg`;
+          return withBasePath(`/images/${type}/placeholder/placeholder.jpg`);
         }
         
         // Use compressed version for thumbnails
@@ -212,8 +198,7 @@ export async function getThumbnailImage(type, slug) {
         const baseName = imageName.substring(0, imageName.length - ext.length - 1);
         
         // Always use the compressed version for thumbnails on listing pages
-        const baseUrl = getBaseUrl();
-        return `${baseUrl}/images/${type}/${slug}/${baseName}_compressed.${ext}`;
+        return withBasePath(`/images/${type}/${slug}/${baseName}_compressed.${ext}`);
       }
     } catch (error) {
       console.error(`Error getting images from API for ${type}/${slug}:`, error);
@@ -222,22 +207,18 @@ export async function getThumbnailImage(type, slug) {
     // Use fallback for known content
     if (knownImages[type] && knownImages[type][slug]) {
       const imageName = knownImages[type][slug];
-      const baseUrl = getBaseUrl();
-      
       if (imageName === 'placeholder') {
-        return `${baseUrl}/images/placeholder_compressed.jpg`;
+        return withBasePath('/images/placeholder_compressed.jpg');
       }
       
-      return `${baseUrl}/images/${type}/${slug}/${imageName}_compressed.jpg`;
+      return withBasePath(`/images/${type}/${slug}/${imageName}_compressed.jpg`);
     }
     
     // Return fallback to cover image when no specific images found
-    const baseUrl = getBaseUrl();
-    return `${baseUrl}/images/cover/cover-full_compressed.jpg`;
+    return withBasePath('/images/cover/cover-full_compressed.jpg');
   } catch (error) {
     console.error(`Error getting thumbnail for ${type}/${slug}:`, error);
     // Use cover image as fallback
-    const baseUrl = getBaseUrl();
-    return `${baseUrl}/images/cover/cover-full_compressed.jpg`;
+    return withBasePath('/images/cover/cover-full_compressed.jpg');
   }
 }

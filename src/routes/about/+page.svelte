@@ -1,6 +1,7 @@
 <script>
   import { onMount } from 'svelte';
   import YearbookTheme from '$lib/components/YearbookTheme.svelte';
+  import { withBasePath } from '$lib/utils/paths.js';
   
   let themeContent = null;
   let loading = true;
@@ -8,7 +9,7 @@
   onMount(async () => {
     try {
       // Load theme content
-      const response = await fetch('/content/about/theme.md');
+      const response = await fetch(withBasePath('/content/about/theme.md'));
       
       if (!response.ok) {
         throw new Error('Failed to load theme content');
@@ -57,7 +58,7 @@
   <h1>About The Vintage 2025</h1>
   
   <div class="cover-display">
-    <img src="/images/cover/cover-full.jpg" alt="BJU Vintage 2025 Cover" />
+    <img src={withBasePath('/images/cover/cover-full.jpg')} alt="BJU Vintage 2025 Cover" />
   </div>
   
   {#if loading}

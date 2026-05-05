@@ -1,5 +1,7 @@
 <script>
   import { onMount } from 'svelte';
+  import { withBasePath } from '$lib/utils/paths.js';
+
   export let images = [];
   export let baseDir;
   
@@ -8,13 +10,9 @@
   let loading = true;
   let currentImageIndex = 0;
   
-  // Helper function to get base URL
-  function getBaseUrl() {
-    if (typeof window !== 'undefined') {
-      const url = new URL(window.location.href);
-      return url.origin; // e.g., "https://your-s3-bucket.amazonaws.com"
-    }
-    return ''; // During SSR
+  function buildImagePath(fileName) {
+    const normalizedBaseDir = baseDir.endsWith('/') ? baseDir.slice(0, -1) : baseDir;
+    return withBasePath(`${normalizedBaseDir}/${fileName}`);
   }
   
   // Create thumbnail and full image URLs
@@ -32,22 +30,15 @@
     fileName = baseName.split('.')[0];
     extension = baseName.split('.').pop();
     
-    // Make URLs absolute
-    const baseUrl = getBaseUrl();
-    
-    // If baseDir already starts with http or / leave it, otherwise add leading slash
-    let normalizedBaseDir = baseDir;
-    if (!normalizedBaseDir.startsWith('http') && !normalizedBaseDir.startsWith('/')) {
-      normalizedBaseDir = '/' + normalizedBaseDir;
-    }
-    
     return {
-      original: `${baseUrl}${normalizedBaseDir}/${baseName}`,
-      thumbnail: `${baseUrl}${normalizedBaseDir}/${fileName}_thumb.${extension}`,
-      compressed: `${baseUrl}${normalizedBaseDir}/${fileName}_compressed.${extension}`,
+      original: buildImagePath(baseName),
+      thumbnail: buildImagePath(`${fileName}_thumb.${extension}`),
+      compressed: buildImagePath(`${fileName}_compressed.${extension}`),
       fileName: baseName
     };
   });
+
+  const placeholderThumb = withBasePath('/images/placeholder-thumb.jpg');
   
   // Track which images have been loaded
   let loadedImages = {};
@@ -80,7 +71,7 @@
                   lazyLoadObserver.unobserve(img);
                 } else {
                   console.warn('Failed to load image, no URL available');
-                  img.src = '/images/placeholder-thumb.jpg';
+                  img.src = placeholderThumb;
                   loadedImages[imageId] = true;
                   lazyLoadObserver.unobserve(img);
                 }
@@ -181,7 +172,7 @@
          aria-label={`View full size image ${i+1}`} role="button" tabindex="0">
       <div class="thumbnail-container">
         <img 
-          src="/images/placeholder-thumb.jpg" 
+          src={placeholderThumb}
           data-src={image.compressed} 
           data-original={image.original}
           data-id={`img-${i}`}
